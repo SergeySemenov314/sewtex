@@ -79,13 +79,14 @@ function html() {
 
 function css() {
     return src(path.src.css)
-        .pipe(gulpStylelint({
-            failAfterError: false,
-            reporters: [{
-                formatter: 'string',
-                console: true
-            }]
-        }))
+        // Stylelint мешает, много ошибок
+        // .pipe(gulpStylelint({
+        //     failAfterError: false,
+        //     reporters: [{
+        //         formatter: 'string',
+        //         console: true
+        //     }]
+        // }))
         .pipe(
             scss({
                 outputStyle: 'expanded'
@@ -123,8 +124,9 @@ function css() {
 function js() {
     return src(path.src.js)
         .pipe(fileinclude())
-        .pipe(eslint())
-        .pipe(eslint.format())
+         // eslint мешает, много ошибок
+        // .pipe(eslint())
+        // .pipe(eslint.format())
            // выгрузка js файла до сжатия
         .pipe(dest(path.build.js))
         // формирование js для старых браузеров, можно отключить

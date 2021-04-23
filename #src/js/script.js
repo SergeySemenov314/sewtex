@@ -1,4 +1,7 @@
-@@include('alert.js')
+@@include('jQuery.js')
+@@include('slick.js')
+
+
 
 // JS-функция определения поддержки WebP. Если поддерживает webp, то в css добавится webp формат
 
@@ -19,3 +22,27 @@ testWebP(function (support) {
     document.querySelector('body').classList.add('no-webp');
   }
 });
+
+
+// =========== main-slider ===============
+
+$('.main-slider__inner').slick({
+    infinite: true,
+    speed: 2000,
+    lazyLoad:'ondemand',
+    pauseOnHover: true,
+    touchMove: false,
+    swipe: true,
+    pauseOnFocus: false,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    autoplay: true,
+    autoplaySpeed: 5000,
+    arrows: true,
+    dots: true,
+    // fade: true,
+    dotsClass: "main-slider__numbers-container",
+    prevArrow: $('.main-slider__prev'),
+    nextArrow: $('.main-slider__next'),
+
+  });
