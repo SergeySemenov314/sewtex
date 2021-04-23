@@ -109,13 +109,17 @@
 .btn {
     width: 227px;
     height: 51px;
+    padding: 10px 48px;
     background-color: $mainColor;
     color: white;
+    font-size: 19px;
+    line-height: 1.57;
     font-weight: 600;
     border: 2px solid $mainColor;
     cursor: pointer;
     transition: background-color .25s ease-in,
         color .25s ease-in;
+
 }
 
 .btn:hover {

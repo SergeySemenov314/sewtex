@@ -1,0 +1,192 @@
+.goods-bg {
+    position: relative;
+    max-width: 1920px;
+    margin-right: auto;
+    margin-left: auto;
+    overflow: hidden;
+    background-color: $mainBg;
+}
+
+.goods-bg-block {
+    position: absolute;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: 35.3%;
+    background-color: $mainColor;
+}
+
+
+.goods {
+    position: relative;
+    z-index: 2;
+    padding-top: 86px;
+    padding-bottom: 50px;
+}
+
+.goods__heading-additional {
+    display: block;
+    font-weight: 600;
+    font-size: 37px;
+    line-height: 1.24;
+    color: $black;
+    margin-bottom: 4px;
+}
+
+.goods__heading {
+    font-weight: bold;
+    font-size: 58px;
+    line-height: 1.22;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    margin-bottom: 98px;
+}
+
+.goods__slider-wrapper {
+    position: relative;
+}
+
+.goods__slider {
+    // удалить, временно
+    // display: flex;
+}
+
+.goods__slide {
+    padding-top: 20px;
+    padding-bottom: 25px;
+    margin-right: 33px;
+}
+
+.goods__slide-card {}
+
+.good-card {
+    position: relative;
+    width: 513px;
+    display: flex;
+    padding: 30px 10px 65px 33px;
+    border: 2px solid $mainColor;
+}
+
+
+.good-card_has-label::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    transform: translate(12%,-50%);
+    width: 155px;
+    height: 38px;
+    background: #FFFFFF;
+    border: 2px solid $mainColor;
+    text-align: center;
+    font-weight: bold;
+    font-size: 24px;
+    text-transform: uppercase;
+    line-height: 1.55;
+    color: $mainColor;
+}
+
+.good-card_new::after {
+      content: 'NEW!';
+}
+
+.good-card_hot::after {
+      content: 'HOT!';
+}
+
+.good-card__img-wrapper {
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 240px;
+    height: 210px;
+    overflow: hidden;
+    margin-right: 32px;
+}
+
+.good-card__img {
+    width: 100%;
+}
+
+.good-card__text-container {
+    margin-top: 15px;
+}
+
+.good-card__good-name {
+    width: 138px;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 1.55;
+    color: $black;
+    margin-bottom: 4px;
+}
+
+.good-card__description {
+    font-size: 15px;
+    line-height: 1.58;
+    color: $black07;
+}
+
+.good-card__btn {
+    position: absolute;
+    bottom: 0;
+    transform: translateY(50%);
+}
+
+
+.goods__slide.slick-current .good-card {
+    border: 2px solid white;
+
+}
+
+.goods__slide.slick-current .btn {
+    border: 2px solid white;
+}
+
+
+.goods__slider__numbers-container {
+    display: flex;
+    width: 271px;
+    border-top: 2px solid $mainColor;
+    margin-top: 129px;
+    margin-left: 1227px;
+}
+
+.goods__slider__numbers-container li {}
+
+.goods__slider__numbers-container li.slick-active {}
+
+.goods__slider__numbers-container button {
+    padding: 0px 39px;
+    background-color: #fff;
+    border: 2px solid $mainColor04;
+    border-top: none;
+    color: $mainColor04;
+    font-size: 24px;
+    line-height: 1.5;
+}
+
+.goods__slider__numbers-container li.slick-active button {
+    color: #fff;
+    background-color: $mainColor;
+    border: 2px solid $mainColor;
+    border-top: none;
+
+}
+
+
+
+
+.goods__btn-next {
+    position: absolute;
+    right: 560px;
+    bottom: 190px;
+    display: block;
+    width: 13px;
+    height: 13px;
+    border-top: 2px solid $mainColor;
+    border-right: 2px solid $mainColor;
+    transform: rotate(45deg);
+}
