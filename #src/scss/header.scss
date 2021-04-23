@@ -1,0 +1,152 @@
+.header-bg {
+    background-color: $mainBg;
+}
+
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0 19px 0;
+}
+
+.header__logo-container {}
+
+.logo-container {}
+
+.logo-container__img {}
+
+.header__inner {
+    width: 1337px;
+}
+
+.header__contacts {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-bottom: 14px;
+}
+
+.header__email-wrapper {
+    display: flex;
+    align-items: center;
+    margin-right: 40px;
+}
+
+.header__email-icon {
+    width: 21px;
+    margin-right: 6px;
+}
+
+.header__email {
+    color: $mainColor;
+    font-size: 19.2px;
+    line-height: 1.55;
+}
+
+.header__email:hover {
+    color: $mainColor;
+}
+
+.header__tel-select {
+
+    margin-right: 40px;
+}
+
+.custom-select {
+    position: relative;
+}
+
+.custom-select__current-wrapper {
+    padding: 2px 2px;
+    display: flex;
+    align-items: center;
+}
+
+.custom-select__icon {
+    width: 26px;
+    margin-right: 5px;
+}
+
+.custom-select__current {
+    color: $mainColor;
+    font-size: 19px;
+    line-height: 1.57;
+
+
+}
+
+.custom-select__options {
+    display: none;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    transform: translateY(100%);
+}
+
+.custom-select__option-wrapper {
+    width: 100%;
+    padding: 2px 2px;
+    display: flex;
+    // transition: background-color .25s ease-in,color .25s ease-in;
+}
+
+.custom-select__option-wrapper:hover {
+    background-color: $mainColor;
+
+}
+
+.custom-select__option {
+    color: $mainColor;
+}
+
+.custom-select__option-wrapper:hover .custom-select__option {
+    color: white;
+}
+
+.header__bottom-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header__nav {}
+
+.header__nav-list {
+    display: flex;
+}
+
+.header__nav-item {
+    margin-right: 56px;
+}
+
+.header__nav-item:last-child {
+    margin-right: 0;
+}
+
+.header__nav-link {
+    color: $black06;
+    font-size: 24px;
+    line-height: 1.55;
+    padding-bottom: 3px;
+    transition: color .25s ease-in;
+}
+
+.header__nav-link:hover {
+    color: $mainColor;
+    border-bottom: 3px solid $mainColor;
+}
+
+.header__nav-link_active {
+    color: $mainColor;
+    border-bottom: 3px solid $mainColor;
+
+}
+
+.header__search-container {}
+
+.header__search-button {}
+
+.header__search-icon {
+    width: 30px;
+}

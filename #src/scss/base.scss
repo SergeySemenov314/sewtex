@@ -1,0 +1,34 @@
+$mainBg: #fff;
+$mainColor: #FF3737;
+$black07: rgba(0, 0, 0, 0.7);
+$black06: rgba(0, 0, 0, 0.6);
+
+.container {
+    max-width: 1638px;
+    /* ширина контента+ падинги */
+    margin-right: auto;
+    margin-left: auto;
+    padding: 0 15px;
+}
+
+@media(max-width: 1200px) {
+    .container {
+        max-width: 970px;
+    }
+
+}
+
+@media(max-width: 992px) {
+    .container {
+        max-width: 750px;
+    }
+
+}
+
+@media(max-width: 767px) {
+    .container {
+        max-width: none;
+    }
+
+}
+
