@@ -1,0 +1,44 @@
+.about-company-bg-out {
+    background-color: $mainBg;
+}
+
+.about-company-bg-inner {
+    position: relative;
+    max-width: 1920px;
+    margin-right: auto;
+    margin-left: auto;
+    overflow: hidden;
+
+    background: url(../img/about-company/about-bg.svg) 108% center no-repeat;
+}
+
+.about-company {
+    padding-top: 181px;
+    padding-bottom: 192px;
+}
+
+.about-company__text-container {}
+
+.about-company__heading-additional {
+    font-weight: 600;
+    font-size: 37px;
+    line-height: 1.24;
+    color: $black;
+    margin-bottom: 4px;
+}
+
+.about-company__heading {
+    font-weight: bold;
+    font-size: 58px;
+    line-height: 1.22;
+    color: $mainColor;
+    margin-bottom: 32px;
+
+}
+
+.about-company__description {
+    max-width: 757px;
+    font-size: 24px;
+    line-height: 158%;
+    color: $black07;
+}
