@@ -105,6 +105,30 @@
   display: none;
 }
 
+@font-face {
+  font-family: "Montserrat";
+  font-display: swap;
+  src: url("../fonts/Montserrat-Regular.woff") format("woff"), url("../fonts/Montserrat-Regular.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Montserrat";
+  font-display: swap;
+  src: url("../fonts/Montserrat-SemiBold.woff") format("woff"), url("../fonts/Montserrat-SemiBold.woff2") format("woff2");
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Montserrat";
+  font-display: swap;
+  src: url("../fonts/Montserrat-Bold.woff") format("woff"), url("../fonts/Montserrat-Bold.woff2") format("woff2");
+  font-weight: 700;
+  font-style: normal;
+}
+
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -300,36 +324,71 @@ img {
   display: block;
 }
 
-@font-face {
-  font-family: "Montserrat";
-  font-display: swap;
-  src: url("../fonts/Montserrat-Regular.woff") format("woff"), url("../fonts/Montserrat-Regular.woff2") format("woff2");
-  font-weight: normal;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: "Montserrat";
-  font-display: swap;
-  src: url("../fonts/Montserrat-SemiBold.woff") format("woff"), url("../fonts/Montserrat-SemiBold.woff2") format("woff2");
-  font-weight: 600;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: "Montserrat";
-  font-display: swap;
-  src: url("../fonts/Montserrat-Bold.woff") format("woff"), url("../fonts/Montserrat-Bold.woff2") format("woff2");
-  font-weight: 700;
-  font-style: normal;
-}
-
 .container {
   max-width: 1638px;
   /* ширина контента+ падинги */
   margin-right: auto;
   margin-left: auto;
   padding: 0 15px;
+}
+
+.btn {
+  width: 227px;
+  height: 51px;
+  padding: 10px 48px;
+  background-color: #FF3737;
+  color: white;
+  font-size: 19px;
+  line-height: 1.57;
+  font-weight: 600;
+  border: 2px solid #FF3737;
+  cursor: pointer;
+  -webkit-transition: background-color .25s ease-in, color .25s ease-in;
+  -o-transition: background-color .25s ease-in, color .25s ease-in;
+  transition: background-color .25s ease-in, color .25s ease-in;
+}
+
+.btn:hover {
+  background-color: white;
+  color: #FF3737;
+}
+
+.btn_big {
+  width: 255px;
+  height: 58px;
+  padding: 14px 61px;
+  font-size: 19px;
+  line-height: 30px;
+}
+
+.btn_border_white {
+  border: 2px solid #FFFFFF;
+}
+
+.btn__text {
+  position: relative;
+}
+
+.btn__text_has-arrow::after {
+  content: '';
+  position: absolute;
+  right: -13px;
+  top: 31%;
+  display: block;
+  width: 9px;
+  height: 9px;
+  border-top: 2px solid white;
+  border-right: 2px solid white;
+  -webkit-transform: rotate(45deg);
+      -ms-transform: rotate(45deg);
+          transform: rotate(45deg);
+  -webkit-transition: border-color .25s ease-in;
+  -o-transition: border-color .25s ease-in;
+  transition: border-color .25s ease-in;
+}
+
+.btn:hover .btn__text_has-arrow::after {
+  border-color: #FF3737;
 }
 
 .header-bg {
@@ -613,61 +672,6 @@ img {
   -webkit-transform: rotate(45deg);
       -ms-transform: rotate(45deg);
           transform: rotate(45deg);
-}
-
-.btn {
-  width: 227px;
-  height: 51px;
-  padding: 10px 48px;
-  background-color: #FF3737;
-  color: white;
-  font-size: 19px;
-  line-height: 1.57;
-  font-weight: 600;
-  border: 2px solid #FF3737;
-  cursor: pointer;
-  -webkit-transition: background-color .25s ease-in, color .25s ease-in;
-  -o-transition: background-color .25s ease-in, color .25s ease-in;
-  transition: background-color .25s ease-in, color .25s ease-in;
-}
-
-.btn:hover {
-  background-color: white;
-  color: #FF3737;
-}
-
-.btn__text {
-  position: relative;
-}
-
-.btn__text_has-arrow::after {
-  content: '';
-  position: absolute;
-  right: -13px;
-  top: 31%;
-  display: block;
-  width: 9px;
-  height: 9px;
-  border-top: 2px solid white;
-  border-right: 2px solid white;
-  -webkit-transform: rotate(45deg);
-      -ms-transform: rotate(45deg);
-          transform: rotate(45deg);
-  -webkit-transition: border-color .25s ease-in;
-  -o-transition: border-color .25s ease-in;
-  transition: border-color .25s ease-in;
-}
-
-.btn:hover .btn__text_has-arrow::after {
-  border-color: #FF3737;
-}
-
-.btn_big {
-  width: 255px;
-  height: 58px;
-  padding: 14px 61px;
-  font-size: 19px;
-  line-height: 30px;
 }
 
 .main-slider__btn-details {
@@ -961,6 +965,134 @@ img {
   font-size: 24px;
   line-height: 158%;
   color: rgba(0, 0, 0, 0.7);
+}
+
+.map-bg {
+  background-color: #fff;
+}
+
+.map-container {
+  max-width: 1920px;
+  margin-right: auto;
+  margin-left: auto;
+  overflow: hidden;
+}
+
+.map {
+  width: 100%;
+  height: 540px;
+}
+
+.order-bg {
+  background-color: #FF3737;
+}
+
+.order {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-top: 55px;
+  padding-bottom: 89px;
+}
+
+.order__text-container {
+  padding-top: 120px;
+  margin-right: 306px;
+}
+
+.order__appeal-top {
+  font-weight: 600;
+  font-size: 30px;
+  line-height: 1.23;
+  color: #000000;
+  margin-bottom: 13px;
+}
+
+.order__appeal-bottom {
+  font-weight: bold;
+  font-size: 46px;
+  line-height: 1.23;
+  text-transform: uppercase;
+  color: #FFFFFF;
+}
+
+.contact-form {
+  position: relative;
+  width: 646.01px;
+  padding: 35px 41px 41px 41px;
+  border: 2px solid #FFFFFF;
+}
+
+.contact-form__inputs-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 52px;
+}
+
+.contact-form__input {
+  padding: 5px 13px;
+  border: none;
+  border-bottom: 1px solid #FFFFFF;
+  font-size: 19px;
+  line-height: 138%;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.contact-form__input::-webkit-input-placeholder {
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 19px;
+}
+
+.contact-form__input::-moz-placeholder {
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 19px;
+}
+
+.contact-form__input:-ms-input-placeholder {
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 19px;
+}
+
+.contact-form__input::-ms-input-placeholder {
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 19px;
+}
+
+.contact-form__input::placeholder {
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 19px;
+}
+
+.contact-form__input-tel {
+  width: 264px;
+  margin-right: 34px;
+}
+
+.contact-form__input-surname {
+  width: 264px;
+}
+
+.contact-form__input-email {
+  width: 100%;
+  margin-bottom: 46px;
+}
+
+.contact-form__textarea {
+  width: 100%;
+  height: 86px;
+  background: inherit;
+  resize: none;
+  overflow: hidden;
+}
+
+.contact-form__btn-submit {
+  position: absolute;
+  bottom: 0;
+  right: 25px;
+  -webkit-transform: translateY(50%);
+      -ms-transform: translateY(50%);
+          transform: translateY(50%);
 }
 
 @media (max-width: 1200px) {

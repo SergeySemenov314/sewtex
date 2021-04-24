@@ -106,61 +106,6 @@
     transform: rotate(45deg);
 }
 
-.btn {
-    width: 227px;
-    height: 51px;
-    padding: 10px 48px;
-    background-color: $mainColor;
-    color: white;
-    font-size: 19px;
-    line-height: 1.57;
-    font-weight: 600;
-    border: 2px solid $mainColor;
-    cursor: pointer;
-    transition: background-color .25s ease-in,
-        color .25s ease-in;
-
-}
-
-.btn:hover {
-    background-color: white;
-    color: $mainColor;
-}
-
-.btn__text {
-    position: relative;
-}
-
-.btn__text_has-arrow::after {
-    content: '';
-    position: absolute;
-    right: -13px;
-    top: 31%;
-    display: block;
-    width: 9px;
-    height: 9px;
-    border-top: 2px solid white;
-    border-right: 2px solid white;
-    transform: rotate(45deg);
-    transition: border-color .25s ease-in;
-
-
-}
-
-.btn:hover .btn__text_has-arrow::after {
-    border-color: $mainColor;
-}
-
-
-
-.btn_big {
-    width: 255px;
-    height: 58px;
-    padding: 14px 61px;
-    font-size: 19px;
-    line-height: 30px;
-
-}
 
 .main-slider__btn-details {
     position: absolute;
