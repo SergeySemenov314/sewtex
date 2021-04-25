@@ -1,0 +1,92 @@
+.footer-bg {
+    background-color: $mainBg;
+}
+
+.footer {
+    display: flex;
+    padding-top: 66px;
+    padding-bottom: 68px;
+}
+
+.footer__about {
+    width: 406px;
+    margin-right: 390px;
+}
+
+.footer__heading {
+    padding-bottom: 18px;
+    border-bottom: 0.5px solid $mainColor07;
+    font-size: 24px;
+    line-height: 155%;
+    color: $black;
+    text-transform: uppercase;
+    margin-bottom: 18px;
+}
+
+.footer__about-description {
+    font-size: 15px;
+    line-height: 158%;
+    color: $black07;
+}
+
+.footer__contacts {
+    width: 261px;
+    margin-right: 146px;
+}
+
+.footer__contact-container {
+    display: flex;
+    align-items: center;
+    margin-bottom: 8px;
+}
+
+.footer__contact-icon {
+    width: 14px;
+    margin-right: 8px;
+}
+
+.footer__contact {
+    font-size: 15px;
+    line-height: 1.6;
+    color: $black07;
+}
+
+.footer__contact-email {
+    text-decoration: underline;
+}
+
+.footer__info {}
+
+.footer__nav {}
+
+.footer__nav-list {}
+
+.footer__nav-item {
+    margin-bottom: 8px;
+}
+
+.footer__nav-link {
+    font-size: 15px;
+    line-height: 1.6;
+    color: $black07;
+
+}
+
+.footer__nav-link:hover {
+    color: $black;
+}
+
+.copyright {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.copyright__text {
+    font-size: 15.36px;
+    line-height: 155%;
+    color: $black;
+}
+
+.copyright__span {
+    color: $mainColor;
+}
