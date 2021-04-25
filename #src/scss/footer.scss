@@ -5,7 +5,7 @@
 .footer {
     display: flex;
     padding-top: 66px;
-    padding-bottom: 68px;
+   margin-bottom: 10px;
 }
 
 .footer__about {
@@ -85,6 +85,7 @@
     font-size: 15.36px;
     line-height: 155%;
     color: $black;
+    padding-bottom: 32px;
 }
 
 .copyright__span {

@@ -3,7 +3,12 @@
 @import "fonts";
 @import "reset";
 @import "base";
+// общие блоки
 @import "btn";
+@import "good-card";
+// end общие блоки
+
+// первая страница
 @import "header";
 @import "main-slider";
 @import "goods";
@@ -11,6 +16,11 @@
 @import "map";
 @import "order";
 @import "footer";
+
+
+// вторая страница
+@import "goods-catalog";
+
 
 
 
