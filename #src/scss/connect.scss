@@ -1,0 +1,28 @@
+.connect-bg {
+    background-color: $mainColor;
+}
+
+.connect {
+    display: flex;
+    padding-top: 88px;
+    padding-bottom: 121px;
+}
+
+.connect__form {
+    margin-right: 426px;
+}
+
+.connect__appeal {
+    width: 408px;
+    padding-top: 95px;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 58px;
+    line-height: 1.22;
+    color: #FFFFFF;
+
+}
+
+.connect__appeal-span {
+    color: $black;
+}
