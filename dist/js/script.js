@@ -71,3 +71,16 @@ $('.goods__slider').slick({
 
 });
 
+
+
+// ===============bread-crumbs==================
+
+
+// bread-crumbs__item_active
+
+let breadCrumbsActive = document.querySelector('.bread-crumbs__item_active');
+
+breadCrumbsActive.onclick = (evt) => {
+    evt.preventDefault();
+}
+

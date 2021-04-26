@@ -48,6 +48,12 @@
     position: relative;
 }
 
+.btn__text_big {
+    font-size: 24px;
+    font-weight: 600;
+
+}
+
 
 .btn__text_has-arrow::after {
     content: '';
@@ -64,7 +70,7 @@
 
 
 }
- 
+
 .btn_small .btn__text_has-arrow::after {
     width: 7px;
     height: 7px;
