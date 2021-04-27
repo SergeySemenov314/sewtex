@@ -78,7 +78,54 @@ $('.goods__slider').slick({
 
 let breadCrumbsActive = document.querySelector('.bread-crumbs__item_active');
 
-breadCrumbsActive.onclick = (evt) => {
-    evt.preventDefault();
+if (breadCrumbsActive) {
+    breadCrumbsActive.onclick = (evt) => {
+        evt.preventDefault();
+    }
+
 }
+
+
+
+// =========== advantages-slider ===============
+
+$('.advantages-slider__inner').slick({
+    infinite: true,
+    speed: 2000,
+    lazyLoad: 'ondemand',
+    pauseOnHover: true,
+    touchMove: false,
+    swipe: true,
+    pauseOnFocus: false,
+    slidesToShow: 2,
+    slidesToScroll: 1,
+    autoplay: true,
+    autoplaySpeed: 3000,
+    arrows: false,
+    dots: false,
+    asNavFor: '.advantages-slider__nav-slider-inner',
+
+});
+
+
+
+$('.advantages-slider__nav-slider-inner').slick({
+    infinite: true,
+    speed: 2000,
+    lazyLoad: 'ondemand',
+    pauseOnHover: true,
+    touchMove: false,
+    swipe: true,
+    pauseOnFocus: false,
+    slidesToShow: 2,
+    slidesToScroll: 1,
+    autoplaySpeed: 3000,
+    arrows: true,
+    focusOnSelect: true, // для переключения на слайд по нажатию
+    prevArrow: $('.advantages-slider__nav-prev'),
+    nextArrow: $('.advantages-slider__nav-next'),
+    asNavFor: '.advantages-slider__inner',
+
+
+});
 

@@ -1,0 +1,43 @@
+.nav-slider {
+    position: relative;
+    width: 271px;
+    border-top: 2px solid $mainColor;
+}
+
+.nav-slider__inner {
+    width: 185px;
+}
+
+.nav-slider__slide {
+    cursor: pointer;
+}
+
+.nav-slider__slide-inner {
+    padding: 0px 32px;
+    background-color: #fff;
+    border: 2px solid $mainColor04;
+    border-top: none;
+    color: $mainColor04;
+    font-size: 24px;
+    line-height: 1.5;
+    text-align: center;
+}
+
+.nav-slider__slide.slick-current .nav-slider__slide-inner {
+    color: #fff;
+    background-color: $mainColor;
+    border: 2px solid $mainColor;
+    border-top: none;
+}
+
+.nav-slider__arrow-next {
+    position: absolute;
+    right: 5px;
+    bottom: 36%;
+    display: block;
+    width: 13px;
+    height: 13px;
+    border-top: 2px solid $mainColor;
+    border-right: 2px solid $mainColor;
+    transform: rotate(45deg);
+}

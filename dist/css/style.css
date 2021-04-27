@@ -410,6 +410,52 @@ img {
   border-color: #FF3737;
 }
 
+.nav-slider {
+  position: relative;
+  width: 271px;
+  border-top: 2px solid #FF3737;
+}
+
+.nav-slider__inner {
+  width: 185px;
+}
+
+.nav-slider__slide {
+  cursor: pointer;
+}
+
+.nav-slider__slide-inner {
+  padding: 0px 32px;
+  background-color: #fff;
+  border: 2px solid rgba(255, 55, 55, 0.4);
+  border-top: none;
+  color: rgba(255, 55, 55, 0.4);
+  font-size: 24px;
+  line-height: 1.5;
+  text-align: center;
+}
+
+.nav-slider__slide.slick-current .nav-slider__slide-inner {
+  color: #fff;
+  background-color: #FF3737;
+  border: 2px solid #FF3737;
+  border-top: none;
+}
+
+.nav-slider__arrow-next {
+  position: absolute;
+  right: 5px;
+  bottom: 36%;
+  display: block;
+  width: 13px;
+  height: 13px;
+  border-top: 2px solid #FF3737;
+  border-right: 2px solid #FF3737;
+  -webkit-transform: rotate(45deg);
+      -ms-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+
 .good-card {
   position: relative;
   width: 513px;
@@ -1789,6 +1835,76 @@ img {
   height: 10px;
   border-radius: 50%;
   background: #FF3737;
+}
+
+.design-block-bg-out {
+  background-color: #fff;
+}
+
+.design-block-bg-inner {
+  max-width: 1920px;
+  height: 824px;
+  margin-right: auto;
+  margin-left: auto;
+  overflow: hidden;
+  background: url(../img/desig-block/desig-block.webp) -53% center no-repeat;
+}
+
+.advantages-slider-bg {
+  background-color: #fff;
+}
+
+.advantages-slider {
+  padding-top: 138px;
+  padding-bottom: 50px;
+  margin-bottom: 125px;
+  overflow: hidden;
+}
+
+.advantages-slider__inner {
+  margin-bottom: 60px;
+}
+
+.advantages-slider__inner .slick-list {
+  margin: 0 -108px;
+}
+
+.advantages-slider-slide {
+  margin: 0 108px;
+}
+
+.advantages-slider__slide-inner {
+  width: 694px;
+}
+
+.advantages-slider__img-wrapper {
+  width: 100%;
+  height: 455px;
+  margin-bottom: 40px;
+}
+
+.advantages-slider__img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+  object-fit: cover;
+  -o-object-position: center;
+  object-position: center;
+}
+
+.advantages-slider__description {
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 1.54;
+}
+
+.advantages-slider__nav-slider-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
 }
 
 @media (max-width: 1200px) {
