@@ -24,6 +24,67 @@ testWebP(function (support) {
 });
 
 
+//=========== header================
+
+
+// ==========custom-lang============
+
+let customSelect = document.querySelector('.custom-select');
+let selectCurrentWrapper = document.querySelector('.custom-select__current-wrapper');
+let selectCurrent = document.querySelector('.custom-select__current');
+let selectOptions = document.querySelectorAll('.custom-select__option-wrapper');
+
+
+selectCurrentWrapper.onclick = () => {
+    customSelect.classList.toggle('custom-select_active');
+}
+
+function selectOptionClick(item) {
+    item.onclick = function () {
+        let optionValue = item.querySelector('.custom-select__option').textContent;
+        selectCurrent.textContent = optionValue;
+        customSelect.classList.remove('custom-select_active');
+    };
+
+}
+
+for (let i = 0; i < selectOptions.length; i++) {
+    selectOptionClick(selectOptions[i]);
+}
+
+
+// ==========select-lang============
+
+let langSelect = document.querySelector('.lang-select');
+let langSelectCurrentWrapper = document.querySelector('.lang-select__current-wrapper');
+let langSelectCurrent = document.querySelector('.lang-select__current');
+let langSelectOptions = document.querySelectorAll('.lang-select__option-wrapper');
+
+langSelectCurrentWrapper.onclick = () => {
+    langSelect.classList.toggle('lang-select_active');
+}
+
+function selectLangOptionClick(item) {
+    item.onclick = function () {
+        let optionValue = item.querySelector('.lang-select__option').innerHTML;
+        langSelectCurrent.innerHTML = optionValue;
+        langSelect.classList.remove('lang-select_active');
+    };
+
+}
+
+for (let i = 0; i < langSelectOptions.length; i++) {
+    selectLangOptionClick(langSelectOptions[i]);
+}
+
+
+
+
+
+
+
+
+
 // =========== main-slider ===============
 
 $('.main-slider__inner').slick({
@@ -38,12 +99,32 @@ $('.main-slider__inner').slick({
     slidesToScroll: 1,
     autoplay: true,
     autoplaySpeed: 5000,
-    arrows: true,
-    dots: true,
+    arrows: false,
+    dots: false,
     // fade: true,
-    dotsClass: "main-slider__numbers-container",
-    prevArrow: $('.main-slider__prev'),
-    nextArrow: $('.main-slider__next'),
+    asNavFor: '.main-slider__nav-slider-inner',
+
+
+});
+
+
+$('.main-slider__nav-slider-inner').slick({
+    infinite: true,
+    speed: 2000,
+    lazyLoad: 'ondemand',
+    pauseOnHover: true,
+    touchMove: false,
+    swipe: true,
+    pauseOnFocus: false,
+    slidesToShow: 2,
+    slidesToScroll: 1,
+    autoplaySpeed: 3000,
+    arrows: true,
+    focusOnSelect: true, // для переключения на слайд по нажатию
+    prevArrow: $('.main-slider__nav-prev'),
+    nextArrow: $('.main-slider__nav-next'),
+    asNavFor: '.main-slider__inner',
+
 
 });
 
@@ -62,10 +143,29 @@ $('.goods__slider').slick({
     autoplay: true,
     autoplaySpeed: 3000,
     arrows: false,
-    dots: true,
-    dotsClass: "goods__slider__numbers-container",
-    prevArrow: $('.goods__slider__prev'),
-    nextArrow: $('.goods__slider__next'),
+    dots: false,
+    asNavFor: '.goods__nav-slider-inner',
+
+});
+
+
+$('.goods__nav-slider-inner').slick({
+    infinite: true,
+    speed: 2000,
+    lazyLoad: 'ondemand',
+    pauseOnHover: true,
+    touchMove: false,
+    swipe: true,
+    pauseOnFocus: false,
+    slidesToShow: 2,
+    slidesToScroll: 1,
+    autoplaySpeed: 3000,
+    arrows: true,
+    focusOnSelect: true, // для переключения на слайд по нажатию
+    prevArrow: $('.goods__nav-prev'),
+    nextArrow: $('.goods__nav-next'),
+    asNavFor: '.goods__slider',
+
 
 });
 
@@ -128,4 +228,3 @@ $('.advantages-slider__nav-slider-inner').slick({
 
 
 });
-

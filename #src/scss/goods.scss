@@ -48,8 +48,7 @@
 }
 
 .goods__slider {
-    // удалить, временно
-    // display: flex;
+    margin-bottom: 129px;
 }
 
 .goods__slide {
@@ -65,48 +64,10 @@
     border: 2px solid white;
 }
 
-
-.goods__slider__numbers-container {
+.goods__nav-slider-wrapper {
     display: flex;
-    width: 271px;
-    border-top: 2px solid $mainColor;
-    margin-top: 129px;
-    margin-left: 1227px;
+    justify-content: flex-end;
+    margin-right: 24px;
 }
 
-.goods__slider__numbers-container li {}
-
-.goods__slider__numbers-container li.slick-active {}
-
-.goods__slider__numbers-container button {
-    padding: 0px 39px;
-    background-color: #fff;
-    border: 2px solid $mainColor04;
-    border-top: none;
-    color: $mainColor04;
-    font-size: 24px;
-    line-height: 1.5;
-}
-
-.goods__slider__numbers-container li.slick-active button {
-    color: #fff;
-    background-color: $mainColor;
-    border: 2px solid $mainColor;
-    border-top: none;
-
-}
-
-
-
-
-.goods__btn-next {
-    position: absolute;
-    right: 560px;
-    bottom: 190px;
-    display: block;
-    width: 13px;
-    height: 13px;
-    border-top: 2px solid $mainColor;
-    border-right: 2px solid $mainColor;
-    transform: rotate(45deg);
-}
+.goods__nav-slider {}

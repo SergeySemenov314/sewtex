@@ -55,12 +55,23 @@
 
 .custom-select {
     position: relative;
+    width: 253px;
+
 }
+
+.custom-select_active {}
 
 .custom-select__current-wrapper {
     padding: 2px 2px;
     display: flex;
     align-items: center;
+    justify-content: center;
+    border: 1px solid transparent;
+    cursor: pointer;
+}
+
+.custom-select_active .custom-select__current-wrapper {
+    border: 1px solid $mainColor06;
 }
 
 .custom-select__icon {
@@ -69,40 +80,213 @@
 }
 
 .custom-select__current {
+    position: relative;
+    padding-right: 20px;
     color: $mainColor;
     font-size: 19px;
-    line-height: 1.57;
+    line-height: 1.27;
 
+
+}
+
+.custom-select__current:after {
+    content: '';
+    position: absolute;
+    right: 1px;
+    top: 24%;
+    display: block;
+    width: 9px;
+    height: 9px;
+    border-top: 1px solid rgba(0, 0, 0, .6);
+    border-right: 1px solid rgba(0, 0, 0, .6);
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(132deg);
+
+}
+
+.custom-select_active .custom-select__current:after {
+    border-top: 1px solid $mainColor;
+    border-right: 1px solid $mainColor;
+    transform: rotate(45deg);
 
 }
 
 .custom-select__options {
     display: none;
     position: absolute;
+    z-index: 10;
     bottom: 0;
     right: 0;
+    left: 0;
     transform: translateY(100%);
+}
+
+.custom-select_active .custom-select__options {
+    display: block;
 }
 
 .custom-select__option-wrapper {
     width: 100%;
     padding: 2px 2px;
     display: flex;
-    // transition: background-color .25s ease-in,color .25s ease-in;
+    justify-content: center;
+    background-color: white;
+    border: 2px solid $mainColor;
+    border-bottom: 1px solid $mainColor;
+    cursor: pointer;
+    // transition: background-color .25s ease-in;
+}
+
+.custom-select__option-wrapper:last-child {
+    border-bottom: 2px solid $mainColor;
 }
 
 .custom-select__option-wrapper:hover {
     background-color: $mainColor;
-
 }
 
+
 .custom-select__option {
+    padding-right: 20px;
     color: $mainColor;
+    font-size: 19px;
+    line-height: 1.57;
+    // transition: color .25s ease-in;
+
 }
 
 .custom-select__option-wrapper:hover .custom-select__option {
     color: white;
 }
+
+
+.custom-select__option-icon {
+    width: 26px;
+    margin-top: 4px;
+    margin-right: 5px;
+}
+
+
+.custom-select__option-wrapper:hover .custom-select__option-icon {
+    filter: brightness(0) saturate(100%) invert(100%) sepia(100%) saturate(0%) hue-rotate(73deg) brightness(100%) contrast(103%);
+}
+
+// смена флага
+.header__lang-select {}
+
+.lang-select {
+    position: relative;
+    width: 78px;
+    height: 32px;
+}
+
+
+.lang-select__current-wrapper {
+    padding: 2px 2px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid transparent;
+    cursor: pointer;
+
+}
+
+.lang-select_active .lang-select__current-wrapper {
+    border: 1px solid $mainColor06;
+}
+
+.lang-select__current {
+    position: relative;
+    padding-right: 20px;
+}
+
+.lang-select__current:after {
+    content: '';
+    position: absolute;
+    right: 1px;
+    top: 24%;
+    display: block;
+    width: 9px;
+    height: 9px;
+    border-top: 1px solid rgba(0, 0, 0, .6);
+    border-right: 1px solid rgba(0, 0, 0, .6);
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(132deg);
+}
+
+.lang-select_active .lang-select__current:after {
+    border-top: 1px solid $mainColor;
+    border-right: 1px solid $mainColor;
+    transform: rotate(45deg);
+
+}
+
+.lang-select__icon {
+    width: 33px;
+}
+
+.lang-select__options {
+    // display: none;
+    display: none;
+    position: absolute;
+    z-index: 10;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    transform: translateY(100%);
+}
+
+.lang-select_active .lang-select__options {
+    display: block;
+}
+
+.lang-select__option-wrapper {
+    width: 100%;
+    padding: 2px 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    border: 2px solid $mainColor;
+    border-bottom: 1px solid $mainColor;
+    cursor: pointer;
+}
+
+.lang-select__option-wrapper:hover {
+    background-color: $mainColor;
+}
+
+.lang-select__option-wrapper:last-child {
+    border-bottom: 2px solid $mainColor;
+}
+
+.lang-select__option-icon {
+    width: 33px;
+    margin-right: 6px;
+}
+
+.lang-select__option-text {
+    color: $mainColor;
+    padding-right: 0;
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 19px;
+
+
+}
+
+
+.lang-select__option-wrapper:hover .lang-select__option-text {
+    color: white;
+}
+
+.lang-select__option {}
+
+
+// смена флага
+
 
 .header__bottom-container {
     display: flex;
@@ -134,7 +318,6 @@
 
 .header__nav-link:hover {
     color: $mainColor;
-    border-bottom: 3px solid $mainColor;
 }
 
 .header__nav-link_active {
