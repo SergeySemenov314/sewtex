@@ -15,23 +15,49 @@ $black06: rgba(0, 0, 0, 0.6);
     padding: 0 15px;
 }
 
-@media(max-width: 1200px) {
+@media(max-width: 1800px) {
     .container {
-        max-width: 970px;
+        max-width: 1158px;  /* ширина контента+ падинги */
     }
 
 }
 
-@media(max-width: 992px) {
+@media(max-width: 1439px) {
     .container {
-        max-width: 750px;
+        max-width: 998px;  /* ширина контента+ падинги */
     }
 
 }
 
+// Это 1024
+@media(max-width: 1279px) {
+    .container {
+        max-width: 846px;  /* ширина контента+ падинги */
+    }
+
+}
+
+// Это 768
+@media(max-width: 1023px) {
+    .container {
+        max-width: 686px;
+    }
+
+}
+
+// Это 480
 @media(max-width: 767px) {
     .container {
-        max-width: none;
+        max-width: 446px;
+    }
+
+}
+
+// Это 320
+@media(max-width: 479px) {
+    .container {
+        max-width: 320px;
+        padding: 0 16px;
     }
 
 }

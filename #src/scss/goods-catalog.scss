@@ -8,7 +8,7 @@
 
 .goods-catalog {
     padding-top: 118px;
-    padding-bottom: 96px;
+    padding-bottom: 67px;
 }
 
 .goods-catalog__heading-additional {
@@ -116,13 +116,10 @@
 }
 
 
-
-.goods-catalog__pagination {
+.goods-catalog__nav-slider-wrapper {
     display: flex;
     justify-content: flex-end;
-    padding-right: 23px;
+    padding-right: 30px;
 }
-
-.goods-catalog__pagination-list {
-    margin-top: 0;
+.goods-catalog__nav-slider {
 }
