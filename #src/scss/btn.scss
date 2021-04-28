@@ -24,7 +24,7 @@
     height: 58px;
     padding: 14px 61px;
     font-size: 19px;
-    line-height: 30px;
+    line-height: 155%;
 
 }
 
@@ -79,3 +79,86 @@
 .btn:hover .btn__text_has-arrow::after {
     border-color: $mainColor;
 }
+
+
+
+// Это 1440
+@media(max-width: 1800px) {
+    .btn_big {
+        width: 191px;
+        height: 43px;
+        padding: 9px 41px;
+        font-size: 16px;
+    }
+
+    .btn__text_has-arrow::after {
+        width: 8px;
+        height: 8px;
+    }
+   
+
+}
+
+// Это 1280
+@media(max-width: 1439px) {
+    .btn_big {
+        width: 169px;
+        height: 38px;
+        padding: 6px 29px;
+    }
+  
+
+}
+
+// Это 1024
+@media(max-width: 1279px) {
+    .btn_big {
+        width: 136px;
+        height: 32px;
+        padding: 4px 19px;
+        font-size: 13px;
+    }
+
+    .btn__text_has-arrow::after {
+        width: 6px;
+        height: 6px;
+    }
+  
+
+}
+
+// Это 768
+@media(max-width: 1023px) {
+
+    .btn_big {
+        width: 200px;
+        height: 64px;
+        padding: 16px 28px;
+        font-size: 20px;
+    }
+
+    .btn__text_has-arrow::after {
+        width: 10px;
+        height: 10px;
+    }
+  
+}
+
+// Это 480
+@media(max-width: 767px) {
+    .btn_big {
+        width: 170px;
+        height: 54px;
+        padding: 10px 14px;
+        font-size: 20px;
+    }
+  
+
+}
+
+// Это 320
+@media(max-width: 479px) {
+   
+
+}
+

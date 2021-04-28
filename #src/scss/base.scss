@@ -15,6 +15,7 @@ $black06: rgba(0, 0, 0, 0.6);
     padding: 0 15px;
 }
 
+// Это 1440
 @media(max-width: 1800px) {
     .container {
         max-width: 1158px;  /* ширина контента+ падинги */
@@ -22,6 +23,7 @@ $black06: rgba(0, 0, 0, 0.6);
 
 }
 
+// Это 1280
 @media(max-width: 1439px) {
     .container {
         max-width: 998px;  /* ширина контента+ падинги */

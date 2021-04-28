@@ -41,3 +41,92 @@
     border-right: 2px solid $mainColor;
     transform: rotate(45deg);
 }
+
+
+// Это 1440
+@media(max-width: 1800px) {
+
+    .nav-slider {
+        position: relative;
+        width: 203px;
+    }
+
+    .nav-slider__inner {
+        width: 150px;
+    }
+
+    .nav-slider__slide-inner {
+        font-size: 20px;
+        line-height: 1.3;
+        padding: 0 20px;
+    }
+
+    .nav-slider__arrow-next {
+        width: 11px;
+        height: 11px;
+    }
+   
+
+}
+
+// Это 1280
+@media(max-width: 1439px) {
+    .nav-slider {
+        width: 180px;
+    }
+    .nav-slider__inner {
+        width: 122px;
+    }
+
+    .nav-slider__slide-inner {
+        font-size: 16px;
+        padding: 0 17px;
+    }
+
+    .nav-slider__arrow-next {
+        width: 10px;
+        height: 10px;
+    }
+
+  
+  
+
+}
+
+// Это 1024
+@media(max-width: 1279px) {
+  
+
+}
+
+// Это 768
+@media(max-width: 1023px) {
+
+    .nav-slider {
+        width: 208px;
+    }
+
+    .nav-slider__inner {
+        width: 142px;
+    }
+
+
+
+    .nav-slider__slide-inner {
+        font-size: 20px;
+        
+    }
+  
+}
+
+// Это 480
+@media(max-width: 767px) {
+  
+
+}
+
+// Это 320
+@media(max-width: 479px) {
+   
+
+}
