@@ -2369,6 +2369,14 @@ img {
     height: 253.4px;
     margin-top: 125px;
   }
+
+  .map-container {
+    max-width: 1440px;
+  }
+
+  .map {
+    height: 405.05px;
+  }
 }
 
 @media (max-width: 1439px) {
@@ -2610,6 +2618,14 @@ img {
     width: 342.87px;
     height: 225.14px;
     margin-top: 70px;
+  }
+
+  .map-container {
+    max-width: 1280px;
+  }
+
+  .map {
+    height: 364.17px;
   }
 }
 
@@ -2874,6 +2890,14 @@ img {
     height: 180.17px;
     margin-top: 85px;
   }
+
+  .map-container {
+    max-width: 1024px;
+  }
+
+  .map {
+    height: 291.43px;
+  }
 }
 
 @media (max-width: 1023px) {
@@ -3087,6 +3111,14 @@ img {
     width: 219.92px;
     height: 144.41px;
     margin-top: 79px;
+  }
+
+  .map-container {
+    max-width: 768px;
+  }
+
+  .map {
+    height: 281.87px;
   }
 }
 
@@ -3367,6 +3399,14 @@ img {
   .about-company__description {
     width: 100%;
   }
+
+  .map-container {
+    max-width: 480px;
+  }
+
+  .map {
+    height: 275.21px;
+  }
 }
 
 @media (max-width: 479px) {
@@ -3559,5 +3599,13 @@ img {
   .about-company__description {
     height: 226.74px;
     overflow: hidden;
+  }
+
+  .map-container {
+    max-width: 320px;
+  }
+
+  .map {
+    height: 229.86px;
   }
 }
