@@ -97,7 +97,7 @@ $('.main-slider__inner').slick({
     pauseOnFocus: false,
     slidesToShow: 1,
     slidesToScroll: 1,
-    autoplay: false,
+    autoplay: true,
     autoplaySpeed: 5000,
     arrows: false,
     dots: false,
@@ -159,11 +159,29 @@ $('.goods__slider').slick({
     pauseOnFocus: false,
     slidesToShow: 3,
     slidesToScroll: 1,
-    autoplay: true,
+    autoplay: false,
     autoplaySpeed: 3000,
     arrows: false,
     dots: false,
     asNavFor: '.goods__nav-slider-inner',
+    responsive: [{
+        breakpoint: 769,
+        settings: {
+            slidesToShow: 2,
+        },
+        breakpoint: 481,
+        settings: {
+            slidesToShow: 2,
+            asNavFor: null,
+            dots: true,
+            arrows: true,
+            prevArrow: $('.goods__mobile-prev'),
+            nextArrow: $('.goods__mobile-next'),
+            dotsClass: 'goods__dots-container',
+
+        }
+    },
+    ]
 
 });
 
@@ -179,11 +197,17 @@ $('.goods__nav-slider-inner').slick({
     slidesToShow: 2,
     slidesToScroll: 1,
     autoplaySpeed: 3000,
+    autoplay: false,
     arrows: true,
     focusOnSelect: true, // для переключения на слайд по нажатию
     prevArrow: $('.goods__nav-prev'),
     nextArrow: $('.goods__nav-next'),
     asNavFor: '.goods__slider',
+    responsive: [{
+        breakpoint: 481,
+        settings: 'unslick',
+    },
+    ]
 
 
 });

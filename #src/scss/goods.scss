@@ -25,21 +25,15 @@
     padding-bottom: 50px;
 }
 
+.section-heading {}
+
+.section-heading-additional {}
+
 .goods__heading-additional {
-    display: block;
-    font-weight: 600;
-    font-size: 37px;
-    line-height: 1.24;
-    color: $black;
     margin-bottom: 4px;
 }
 
 .goods__heading {
-    font-weight: bold;
-    font-size: 58px;
-    line-height: 1.22;
-    text-transform: uppercase;
-    color: #FFFFFF;
     margin-bottom: 98px;
 }
 
@@ -71,3 +65,180 @@
 }
 
 .goods__nav-slider {}
+
+
+
+
+
+
+// Это 1440
+@media(max-width: 1800px) {
+
+    .goods-bg-block {
+        width: 36.3%;
+    }
+
+    .goods {
+        padding-top: 64px;
+    }
+
+    .goods__heading {
+        margin-bottom: 59px;
+    }
+
+    .goods__slider {
+        margin-bottom: 106px;
+    }
+}
+
+// Это 1280
+@media(max-width: 1439px) {
+    .goods-bg-block {
+        width: 36.8%;
+    }
+
+    .goods {
+        padding-top: 59px;
+        padding-bottom: 42px;
+    }
+
+    .goods__slider {
+        margin-bottom: 102px;
+    }
+
+    .goods__slide {
+        margin-right: 19.8px;
+    }
+}
+
+// Это 1024
+@media(max-width: 1279px) {
+    .goods-bg-block {
+        width: 36.5%;
+    }
+
+    .goods {
+        padding-top: 47px;
+        padding-bottom: 42px;
+    }
+
+    .goods__heading {
+        margin-bottom: 39px;
+    }
+
+    .goods__slider {
+        margin-bottom: 78px;
+    }
+}
+
+// Это 768
+@media(max-width: 1023px) {
+    .goods-bg-block {
+        width: 48.5%;
+    }
+
+    .goods {
+        padding-top: 38px;
+        padding-bottom: 20px;
+    }
+
+    .goods__heading {
+        margin-bottom: 16px;
+    }
+
+    .goods__slider {
+        margin-bottom: 50px;
+    }
+
+    .goods__slide {
+        margin-right: 29px;
+    }
+
+
+}
+
+// Это 480
+@media(max-width: 767px) {
+    .goods-bg-block {
+        width: auto;
+        right: 0;
+
+    }
+
+    .goods {
+        padding-top: 35px;
+        padding-bottom: 34px;
+    }
+
+    .goods__heading {
+        margin-bottom: 23px;
+    }
+
+    .goods__slider {
+        margin-bottom: 0;
+    }
+
+    .goods__nav-slider-wrapper {
+        display: none;
+    }
+
+    .goods__mobile-next {
+        position: absolute;
+        right: 0;
+        top: 39%;
+        display: block;
+        width: 22px;
+        height: 22px;
+        border-top: 2px solid #fff;
+        border-right: 2px solid #fff;
+        transform: rotate(45deg);
+    }
+
+    .goods__dots-container {
+        display: flex;
+        margin-top: 24px;
+    }
+
+    .goods__dots-container button {
+        font-size: 0;
+        width: 16px;
+        height: 16px;
+        border: 1px solid white;
+        border-radius: 50%;
+        margin-right: 16px;
+        transition: background-color .25s ease-in;
+    }
+
+    .goods__dots-container li.slick-active button {
+        background-color: white;
+    }
+
+
+}
+
+// Это 320
+@media(max-width: 479px) {
+    .goods {
+        padding-top: 32px;
+        padding-bottom: 27px;
+    }
+
+    .goods__heading {
+        margin-bottom: 18px;
+    }
+
+    .goods__mobile-next {
+        width: 18px;
+        height: 18px;
+    }
+
+    .goods__dots-container {
+        margin-top: 0px;
+    }
+
+
+    .goods__dots-container button {
+        width: 12px;
+        height: 12px;
+    }
+}

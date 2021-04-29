@@ -99,3 +99,287 @@
     border: 2px solid white;
 
 }
+
+.good-card__btn-mobile {
+    display: none;
+}
+
+
+
+// Это 1440
+@media(max-width: 1800px) {
+    .good-card {
+        width: 360px;
+        height: 214px;
+        padding: 20px 14px 45px 23px;
+    }
+
+    .goods__slide {
+        margin-right: 23px;
+    }
+
+    .good-card__img-wrapper {
+        width: 168.03px;
+        height: 147.43px;
+    }
+
+    .good-card__good-name {
+        font-size: 20px;
+    }
+
+    .good-card__description {
+        height: 110px;
+        overflow: hidden;
+        font-size: 12px;
+    }
+
+    .good-card_has-label::after {
+        width: 108.84px;
+        height: 27.03px;
+        line-height: 1.2;
+        font-size: 20px;
+    }
+
+
+}
+
+// Это 1280
+@media(max-width: 1439px) {
+    .good-card {
+        width: 309.33px;
+        height: 183.73px;
+        padding: 18px 21px 34px 20px;
+    }
+
+    .good-card__img-wrapper {
+        width: 144.18px;
+        height: 126.51px;
+        margin-right: 19px;
+    }
+
+    .good-card__good-name {
+        font-size: 16px;
+    }
+
+    .good-card_has-label::after {
+        width: 93.39px;
+        height: 23.19px;
+        font-size: 16px;
+    }
+}
+
+// Это 1024
+@media(max-width: 1279px) {
+
+
+    .good-card {
+        width: 260.66px;
+        height: 154.82px;
+        padding: 15px 9px 25px 16px;
+    }
+
+    .good-card__img-wrapper {
+        width: 121.5px;
+        height: 106.6px;
+        margin-right: 16px;
+    }
+
+    .good-card__description {
+        height: 71px;
+    }
+
+    .good-card_has-label::after {
+        width: 78.7px;
+        height: 24px;
+    }
+}
+
+// Это 768
+@media(max-width: 1023px) {
+    .good-card {
+        width: 303.58px;
+        height: 173.3px;
+        padding: 22px 8px 25px 10px;
+    }
+
+    .good-card__img-wrapper {
+        width: 147.85px;
+        height: 124.68px;
+        margin-right: 19px;
+    }
+
+    .good-card__text-container {
+        margin-top: 0;
+    }
+
+    .good-card__description {
+        height: 95px;
+        font-size: 16px;
+    }
+
+
+    .good-card__btn {
+        display: none;
+    }
+
+    .good-card_has-label::after {
+        width: 91.8px;
+        height: 28px;
+        font-size: 16px;
+        padding-top: 3px;
+    }
+
+    .good-card__btn-mobile {
+        position: absolute;
+        bottom: -21px;
+        right: -22px;
+        display: block;
+        @include circle(56px, $mainColor);
+        border: 2px solid $mainColor;
+    }
+
+    .goods__slide.slick-current .good-card__btn-mobile {
+        border: 2px solid white;
+
+    }
+
+    .good-card__btn-mobile::before,
+    .good-card__btn-mobile::after {
+        content: '';
+        position: absolute;
+        width: 2px;
+        height: 24px;
+        background-color: #fff;
+        border-radius: 7px;
+
+    }
+
+    // вертикальная линия
+    .good-card__btn-mobile::after {
+        top: 50%;
+        right: 50%;
+        transform: translate(50%, -50%);
+
+
+    }
+
+    // горизонтальная линия
+    .good-card__btn-mobile::before {
+        transform: rotate(90deg);
+        top: 14px;
+        right: 25px;
+
+
+    }
+}
+
+// Это 480
+@media(max-width: 767px) {
+
+
+    .good-card {
+        flex-direction: column;
+        width: 176.69px;
+        height: 252.74px;
+        padding: 19px 18px 14px 11px;
+    }
+
+    .goods__slide.slick-active .good-card {
+        border: 2px solid white;
+
+    }
+
+    .good-card__img-wrapper {
+        align-self: center;
+        margin-right: 0;
+        width: 137.11px;
+        height: 112.76px;
+        margin-bottom: 8px;
+    }
+
+    .good-card__good-name {
+        margin-bottom: 0;
+    }
+
+    .good-card__description {
+        width: 100%;
+        height: 75px;
+    }
+
+    .good-card_has-label::after {
+        width: 84.43px;
+        height: 25.75px;
+    }
+
+    .goods__slide.slick-active .good-card__btn-mobile {
+        border: 2px solid white;
+
+    }
+
+    .good-card__btn-mobile {
+        width: 43.94px;
+        height: 43.94px;
+        bottom: -16px;
+        right: -17px;
+    }
+
+
+    .good-card__btn-mobile::before {
+        top: 9px;
+        right: 20px;
+    }
+}
+
+// Это 320
+@media(max-width: 479px) {
+    .good-card {
+        width: 120.12px;
+        height: 190.22px;
+        padding: 13px 8px 9px 8px;
+    }
+
+    .good-card__img-wrapper {
+        width: 100%;
+        height: 77px;
+    }
+
+    .good-card__good-name {
+        width: 100%;
+    }
+
+    .good-card__description {
+        font-size: 12px;
+        height: 54px;
+    }
+
+    .good-card__btn-mobile {
+        width: 29.87px;
+        height: 29.87px;
+        bottom: -12px;
+        right: -11px;
+    }
+
+    .good-card__btn-mobile::after,
+    .good-card__btn-mobile::before {
+        height: 12.8px;
+    }
+
+    .good-card__btn-mobile::before {
+        top: 7px;
+        right: 12px;
+    }
+
+    .good-card_has-label::after {
+        width: 66.95px;
+        height: 20.79px;
+        padding-top: 2px;
+        font-size: 12px;
+
+    }
+
+    
+
+
+
+
+}
