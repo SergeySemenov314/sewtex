@@ -469,7 +469,11 @@ img {
   font-size: 58px;
   line-height: 1.22;
   text-transform: uppercase;
-  color: #FFFFFF;
+  color: #FF3737;
+}
+
+.section-heading_white {
+  color: white;
 }
 
 .good-card {
@@ -1261,12 +1265,15 @@ img {
   margin-right: auto;
   margin-left: auto;
   overflow: hidden;
-  background: url(../img/about-company/about-bg.svg) 108% center no-repeat;
+  background: url(../img/about-company/about-bg.svg) 1043px 161px no-repeat;
 }
 
 .about-company {
   padding-top: 181px;
   padding-bottom: 192px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .about-company_page-about {
@@ -1274,27 +1281,44 @@ img {
   padding-bottom: 60px;
 }
 
+.about-company__text-container {
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  margin-right: 205px;
+}
+
 .about-company__heading-additional {
-  font-weight: 600;
-  font-size: 37px;
-  line-height: 1.24;
-  color: #000000;
   margin-bottom: 4px;
 }
 
 .about-company__heading {
-  font-weight: bold;
-  font-size: 58px;
-  line-height: 1.22;
-  color: #FF3737;
   margin-bottom: 32px;
 }
 
 .about-company__description {
-  max-width: 757px;
+  width: 757px;
   font-size: 24px;
   line-height: 158%;
   color: rgba(0, 0, 0, 0.7);
+}
+
+.about-company__img-container {
+  width: 556.89px;
+  height: 365.68px;
+  margin-top: 146px;
+}
+
+.about-company__img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+  object-fit: cover;
+  -o-object-position: center;
+  object-position: center;
+}
+
+.about-company__img-mobile-container {
+  display: none;
 }
 
 .map-bg {
@@ -2316,6 +2340,35 @@ img {
   .goods__slider {
     margin-bottom: 106px;
   }
+
+  .about-company-bg-inner {
+    max-width: 1440px;
+    background: url(../img/about-company/about-bg-1440.webp) 792px 103px no-repeat;
+  }
+
+  .about-company {
+    padding-top: 95px;
+    padding-bottom: 73px;
+  }
+
+  .about-company__heading {
+    margin-bottom: 16px;
+  }
+
+  .about-company__text-container {
+    margin-right: 134px;
+  }
+
+  .about-company__description {
+    width: 554px;
+    font-size: 20px;
+  }
+
+  .about-company__img-container {
+    width: 385.9px;
+    height: 253.4px;
+    margin-top: 125px;
+  }
 }
 
 @media (max-width: 1439px) {
@@ -2532,6 +2585,31 @@ img {
 
   .goods__slide {
     margin-right: 19.8px;
+  }
+
+  .about-company-bg-inner {
+    max-width: 1280px;
+    background: url(../img/about-company/about-bg-1280.webp) 688px 53px no-repeat;
+  }
+
+  .about-company {
+    padding-top: 87px;
+    padding-bottom: 137px;
+  }
+
+  .about-company__text-container {
+    margin-right: 140px;
+  }
+
+  .about-company__description {
+    width: 440px;
+    font-size: 16px;
+  }
+
+  .about-company__img-container {
+    width: 342.87px;
+    height: 225.14px;
+    margin-top: 70px;
   }
 }
 
@@ -2772,6 +2850,30 @@ img {
   .goods__slider {
     margin-bottom: 78px;
   }
+
+  .about-company-bg-inner {
+    max-width: 1024px;
+    background: url(../img/about-company/about-bg-1024.webp) 582px 71px no-repeat;
+  }
+
+  .about-company {
+    padding-top: 70px;
+    padding-bottom: 47px;
+  }
+
+  .about-company__text-container {
+    margin-right: 76px;
+  }
+
+  .about-company__description {
+    width: 435px;
+  }
+
+  .about-company__img-container {
+    width: 274.38px;
+    height: 180.17px;
+    margin-top: 85px;
+  }
 }
 
 @media (max-width: 1023px) {
@@ -2961,6 +3063,30 @@ img {
 
   .goods__slide {
     margin-right: 29px;
+  }
+
+  .about-company-bg-inner {
+    max-width: 768px;
+    background: url(../img/about-company/about-bg-768.webp) 432px 52px no-repeat;
+  }
+
+  .about-company {
+    padding-top: 41px;
+    padding-bottom: 30px;
+  }
+
+  .about-company__text-container {
+    margin-right: 55px;
+  }
+
+  .about-company__description {
+    width: 348px;
+  }
+
+  .about-company__img-container {
+    width: 219.92px;
+    height: 144.41px;
+    margin-top: 79px;
   }
 }
 
@@ -3205,6 +3331,42 @@ img {
   .goods__dots-container li.slick-active button {
     background-color: white;
   }
+
+  .about-company-bg-inner {
+    max-width: 480px;
+    background: url(../img/about-company/about-bg-480.webp) 33px 88px no-repeat;
+  }
+
+  .about-company {
+    padding-top: 42px;
+    padding-bottom: 31px;
+  }
+
+  .about-company__text-container {
+    margin-right: 0;
+    width: 100%;
+  }
+
+  .section-heading {
+    margin-bottom: 54px;
+  }
+
+  .about-company__img-mobile-container {
+    display: block;
+    width: 337.09px;
+    height: 221.35px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 68px;
+  }
+
+  .about-company__img-container {
+    display: none;
+  }
+
+  .about-company__description {
+    width: 100%;
+  }
 }
 
 @media (max-width: 479px) {
@@ -3372,5 +3534,30 @@ img {
   .goods__dots-container button {
     width: 12px;
     height: 12px;
+  }
+
+  .about-company-bg-inner {
+    max-width: 320px;
+    background: url(../img/about-company/about-bg-320.webp) 17px 96px no-repeat;
+  }
+
+  .about-company {
+    padding-top: 34px;
+    padding-bottom: 30px;
+  }
+
+  .section-heading {
+    margin-bottom: 45px;
+  }
+
+  .about-company__img-mobile-container {
+    width: 230.96px;
+    height: 151.66px;
+    margin-bottom: 49px;
+  }
+
+  .about-company__description {
+    height: 226.74px;
+    overflow: hidden;
   }
 }

@@ -11,7 +11,11 @@
     font-size: 58px;
     line-height: 1.22;
     text-transform: uppercase;
-    color: #FFFFFF;
+    color: $mainColor;
+}
+
+.section-heading_white {
+    color: white;
 }
 
 
