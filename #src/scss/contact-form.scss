@@ -25,7 +25,7 @@
     font-size: 19px;
 }
 
-.contact-form__input-tel {
+.contact-form__input-name {
     width: 264px;
     margin-right: 34px;
 }
@@ -47,6 +47,7 @@
     background: inherit;
     resize: none;
     overflow: hidden;
+    font-family: 'Montserrat', sans-serif;
    
 }
 
@@ -55,4 +56,188 @@
     bottom: 0;
     right: 25px;
     transform: translateY(50%);
+}
+
+
+
+
+// Это 1440
+@media(max-width: 1800px) {
+    .contact-form {
+        width: 491.03px;
+        padding: 25px 31px 31px 31px;
+    }
+
+    .contact-form__inputs-container {
+        margin-bottom: 38px;
+    }
+
+    .contact-form__input {
+        font-size: 16px;
+    }
+
+    .contact-form__input::placeholder {
+        font-size: 16px;
+    }
+
+    .contact-form__input-name {
+        width: 201px;
+    }
+
+    .contact-form__input-surname {
+        width: 201px;
+    }
+
+    .contact-form__input-email {
+        margin-bottom: 34px;
+    }
+
+    .contact-form__textarea {
+        height: 65px;
+    }
+   
+
+}
+
+// Это 1280
+@media(max-width: 1439px) {
+    .contact-form {
+        width: 458.5px;
+        padding: 25px 29px 29px 29px;
+
+        
+    }
+
+    .contact-form__input {
+        font-size: 12px;
+    }
+
+    .contact-form__input::placeholder {
+        font-size: 12px;
+    }
+
+    .contact-form__input-name {
+        width: 187px;
+    }
+
+    .contact-form__input-surname {
+        width: 187px;
+    }
+
+    .contact-form__input-email {
+        margin-bottom: 32px;
+    }
+  
+
+}
+
+// Это 1024
+@media(max-width: 1279px) {
+    // Ничего не менялось
+
+}
+
+// Это 768
+@media(max-width: 1023px) {
+
+    .contact-form {
+        width: 376.08px;
+        padding: 24px 22px 27px 22px;
+
+        
+    }
+
+    .contact-form__input {
+        font-size: 16px;
+    }
+
+    .contact-form__input::placeholder {
+        font-size: 16px;
+    }
+
+    .contact-form__inputs-container {
+        margin-bottom: 19px;
+    }
+
+    .contact-form__input-name {
+        width: 155px;
+        margin-right: 20px;
+    }
+
+    .contact-form__input-surname {
+        width: 155px;
+    }
+
+    .contact-form__input-email {
+        margin-bottom: 25px;
+    }
+  
+}
+
+// Это 480
+@media(max-width: 767px) {
+    .contact-form {
+        width: 397.56px;
+        padding: 26px 23px 50px 23px;
+    }
+
+    .contact-form__input-name {
+        width: 164px;
+    }
+
+    .contact-form__input-surname {
+        width: 164px;
+    }
+
+    .contact-form__btn-submit {
+        right: -20px;
+    }
+  
+
+}
+
+// Это 320
+@media(max-width: 479px) {
+    .contact-form {
+        width: 275.9px;
+        padding: 16px 13px 35px 16px;
+    }
+
+    .contact-form__inputs-container {
+        flex-wrap: wrap;
+        margin-bottom: 22px;
+    }
+
+    .contact-form__input {
+        font-size: 12px;
+    }
+
+    .contact-form__input::placeholder {
+        font-size: 12px;
+    }
+
+    .contact-form__input-name {
+        width: 100%;
+        margin-right: 0;
+        margin-bottom: 22px;
+    }
+
+    .contact-form__input-email {
+        margin-bottom: 19px;
+    }
+
+    .contact-form__input-surname {
+        width: 100%;
+    }
+
+    .contact-form__textarea {
+        height: 55px;
+    }
+
+    .contact-form__btn-submit {
+        right: -13px;
+    }
+
+   
+
 }

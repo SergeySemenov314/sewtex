@@ -30,3 +30,133 @@
 }
 
 .order__form {}
+
+
+
+
+
+// Это 1440
+@media(max-width: 1800px) {
+    .order {
+        padding-top: 39px;
+        padding-bottom: 39px;
+    }
+
+    .order__text-container {
+        flex-shrink: 0;
+        padding-top: 88px;
+        margin-right: 183px;
+    }
+
+    .order__appeal-top {
+        font-size: 25px;
+        margin-bottom: 7px;
+    }
+    .order__appeal-bottom {
+        font-size: 39.06px;
+    }
+   
+
+}
+
+// Это 1280
+@media(max-width: 1439px) {
+
+    .order {
+        padding-top: 46px;
+        padding-bottom: 63px;
+    }
+
+    .order__text-container {
+        margin-right: 151px;
+    }
+
+    .order__appeal-top {
+        font-size: 20px;
+    }
+    .order__appeal-bottom {
+        font-size: 31px;
+    }
+  
+
+}
+
+// Это 1024
+@media(max-width: 1279px) {
+    .order {
+        padding-top: 24px;
+        padding-bottom: 41px;
+    }
+
+    .order__text-container {
+        margin-right: 86px;
+    }
+
+    .order__appeal-top {
+        margin-bottom: 1px;
+    }
+
+    .order__appeal-bottom {
+        width: 214px;
+    }
+  
+
+}
+
+// Это 768
+@media(max-width: 1023px) {
+    .order {
+        padding-top: 26px;
+        padding-bottom: 57px;
+    }
+
+    .order__text-container {
+        width: 215px;
+        padding-top: 68px;
+        margin-right: 47px;
+    }
+
+    .order__appeal-bottom {
+        font-size: 25px;
+    }
+  
+  
+}
+
+// Это 480
+@media(max-width: 767px) {
+
+    .order {
+        flex-wrap: wrap;
+    }
+
+    .order__text-container {
+        width: 100%;
+        margin-right: 0;
+        padding-top: 0;
+        margin-bottom: 23px;
+    }
+
+    .order__appeal-top {
+        margin-bottom: 4px;
+    }
+
+    .order__appeal-bottom {
+        width: auto;
+    }
+  
+
+}
+
+// Это 320
+@media(max-width: 479px) {
+    .order {
+        padding-top: 32px;
+        padding-bottom: 59px;
+    }
+
+
+
+   
+
+}
