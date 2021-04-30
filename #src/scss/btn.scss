@@ -105,6 +105,18 @@
         height: 8px;
     }
 
+    .btn_small {
+        width: 119.74px;
+        height: 27.23px;
+        padding: 2px 14px;
+        font-size: 12px;
+    }
+
+    .btn_small .btn__text_has-arrow::after {
+        width: 5px;
+        height: 5px;
+    }
+
 
 }
 
@@ -128,6 +140,18 @@
         padding: 6px 29px;
     }
 
+    .btn_small {
+        width: 153.85px;
+        height: 34.99px;
+        padding: 5px 18px;
+        font-size: 16px;
+    }
+
+    .btn_small .btn__text_has-arrow::after {
+        width: 6px;
+        height: 6px;
+    }
+
 
 }
 
@@ -148,6 +172,18 @@
     }
 
     .btn_big .btn__text_has-arrow::after {
+        width: 6px;
+        height: 6px;
+    }
+
+    .btn_small {
+        width: 125.45px;
+        height: 28.53px;
+        padding: 4px 16px;
+        font-size: 12px;
+    }
+
+    .btn_small .btn__text_has-arrow::after {
         width: 6px;
         height: 6px;
     }

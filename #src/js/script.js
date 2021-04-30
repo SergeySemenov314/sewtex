@@ -214,6 +214,29 @@ $('.goods__nav-slider-inner').slick({
 
 
 
+
+
+$('.goods-catalog__nav-slider-inner').slick({
+    infinite: true,
+    speed: 2000,
+    lazyLoad: 'ondemand',
+    pauseOnHover: true,
+    touchMove: false,
+    swipe: true,
+    pauseOnFocus: false,
+    slidesToShow: 2,
+    slidesToScroll: 1,
+    autoplaySpeed: 3000,
+    arrows: true,
+    autoplay: false,
+    focusOnSelect: true, // для переключения на слайд по нажатию
+    prevArrow: $('.goods-catalog__nav-prev'),
+    nextArrow: $('.goods-catalog__nav-next'),
+
+});
+
+
+
 // ===============bread-crumbs==================
 
 
