@@ -26,3 +26,109 @@
 .connect__appeal-span {
     color: $black;
 }
+
+.connect__contacts-container {
+    display: none;
+}
+
+
+
+// Это 1440
+@media(max-width: 1800px) {
+
+    .connect__form {
+        margin-right: 276px;
+    }
+
+    .connect__appeal {
+        font-size: 39px;
+    }
+    
+   
+
+}
+
+// Это 1280
+@media(max-width: 1439px) {
+    .connect {
+        padding-top: 37px;
+        padding-bottom: 53px;
+    }
+
+    .connect__form {
+        margin-right: 210px;
+    }
+
+    .connect__appeal {
+        width: 223px;
+        font-size: 31px;
+    }
+  
+
+}
+
+// Это 1024
+@media(max-width: 1279px) {
+
+    .connect {
+        padding-top: 50px;
+        padding-bottom: 67px;
+    }
+
+    .connect__form {
+        margin-right: 96px;
+    }
+  
+
+}
+
+// Это 768
+@media(max-width: 1023px) {
+    .connect {
+        flex-direction: column;
+        padding-top: 23px;
+        padding-bottom: 65px;
+    }
+
+    .connect__form {
+        margin-right: 59px;
+    }
+
+    .connect .connect__contacts-container {
+        display: block;
+    }
+
+    .connect__appeal {
+        order: 1;
+        width: 100%;
+        padding-top: 0;
+        margin-bottom: 24px;
+    }
+
+    .connect__form {
+        order: 2;
+        margin-right: 0;
+    }
+  
+}
+
+// Это 480
+@media(max-width: 767px) {
+
+    .connect {
+        padding-top: 24px;
+        padding-bottom: 59px;
+    }
+
+    .connect__appeal {
+        width: 84%;
+    }
+  
+
+}
+
+// Это 320
+@media(max-width: 479px) {
+   
+
+}

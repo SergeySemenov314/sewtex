@@ -53,3 +53,187 @@
 .contacts__contact:hover {
     color: #fff;
 }
+
+
+
+// Это 1440
+@media(max-width: 1800px) {
+    .contacts {
+        padding-top: 67px;
+        padding-bottom: 15px;
+    }
+
+    .contacts__heading-additional {
+        font-size: 31px;
+        margin-bottom: 0;
+    }
+
+    .contacts__heading {
+        font-size: 48px;
+        margin-bottom: 63px;
+    }
+
+    .contacts__contact-wrapper {
+        margin-right: 35px;
+    }
+
+    .contacts__contact {
+        font-size: 16px;
+    }
+
+    .contacts__contact-icon {
+        width: 20px;
+        margin-right: 5px;
+    }
+   
+
+}
+
+// Это 1280
+@media(max-width: 1439px) {
+    .contacts {
+
+    }
+
+    .contacts__heading-additional {
+        font-size: 25px;
+        margin-bottom: 0;
+    }
+
+    .contacts__heading {
+        font-size: 39px;
+        margin-bottom: 60px;
+    }
+
+    .contacts__contact-wrapper {
+
+    }
+
+    .contacts__contact {
+        font-size: 16px;
+    }
+
+    .contacts__contact-icon {
+        width: 20px;
+        margin-right: 5px;
+    }
+  
+
+}
+
+// Это 1024
+@media(max-width: 1279px) {
+    .contacts {
+        padding-top: 53px;
+        padding-bottom: 7px;
+    }
+
+    .contacts__heading-additional {
+        margin-bottom: 0;
+    }
+
+    .contacts__heading {
+        margin-bottom: 56px;
+    }
+
+    .contacts__contact-wrapper {
+        margin-right: 24px;
+
+    }
+
+    .contacts__contact {
+
+    }
+
+    .contacts__contact-icon {
+       width: 14px;
+        margin-right: 5px;
+    }
+  
+
+}
+
+// Это 768
+@media(max-width: 1023px) {
+    .contacts {
+        padding-top: 40px;
+        padding-bottom: 8px;
+    }
+
+    .contacts__heading-additional {
+
+    }
+
+    .contacts__heading {
+        margin-bottom: 29px;
+    }
+
+    .contacts__contact-wrapper {
+        margin-right: 16px;
+
+    }
+
+    .contacts__contact {
+
+    }
+
+    .contacts__contact-icon {
+        width: 19px;
+        margin-right: 5px;
+    }
+  
+}
+
+// Это 480
+@media(max-width: 767px) {
+    .contacts {
+        padding-top: 40px;
+        padding-bottom: 23px;
+    }
+
+    .contacts__heading-additional {
+
+    }
+
+    .contacts__heading {
+        margin-bottom: 0;
+    }
+
+    .contacts__info-container {
+        display: none;
+        padding-bottom: 23px;
+        border-bottom: 1px solid #FFFFFF;
+        margin-bottom: 32px;
+    }
+
+    .contacts__contact-wrapper {
+        margin-bottom: 16px;
+    }
+
+    .contacts__contact-wrapper:last-child {
+        margin-bottom: 0;
+    }
+  
+
+}
+
+// Это 320
+@media(max-width: 479px) {
+    .contacts {
+        padding-top: 26px;
+    }
+
+    .contacts__heading {
+        font-size: 31px;
+    }
+
+    .contacts__contact-wrapper {
+        margin-bottom: 12px;
+    }
+
+    .contacts__contact-icon {
+        width: 21px;
+    }
+   
+
+}
