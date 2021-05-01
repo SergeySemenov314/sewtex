@@ -2036,7 +2036,22 @@ img {
   margin-right: auto;
   margin-left: auto;
   overflow: hidden;
-  background: url(../img/desig-block/desig-block.webp) -53% center no-repeat;
+  background: url(../img/desig-block/desig-block.webp) -60% center no-repeat;
+}
+
+.design-block__img-wrapper {
+  width: 1067px;
+  height: 477.85px;
+  margin-top: 171px;
+}
+
+.design-block__img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+  object-fit: cover;
+  -o-object-position: center;
+  object-position: center;
 }
 
 .advantages-slider-bg {
@@ -2751,6 +2766,17 @@ img {
     width: 8px;
     height: 8px;
   }
+
+  .design-block-bg-inner {
+    height: 582px;
+    background: url(../img/desig-block/desig-block-1440.webp) -127px center no-repeat;
+  }
+
+  .design-block__img-wrapper {
+    width: 760.17px;
+    height: 341.55px;
+    margin-top: 114px;
+  }
 }
 
 @media (max-width: 1439px) {
@@ -3326,6 +3352,17 @@ img {
     width: 6.73px;
     height: 6.73px;
   }
+
+  .design-block-bg-inner {
+    height: 519px;
+    background: url(../img/desig-block/desig-block-1280.webp) -127px center no-repeat;
+  }
+
+  .design-block__img-wrapper {
+    width: 625px;
+    height: 280.93px;
+    margin-top: 150px;
+  }
 }
 
 @media (max-width: 1279px) {
@@ -3870,6 +3907,17 @@ img {
     top: 9px;
     width: 5.62px;
     height: 5.62px;
+  }
+
+  .design-block-bg-inner {
+    height: 440px;
+    background: url(../img/desig-block/desig-block-1024.webp) -127px center no-repeat;
+  }
+
+  .design-block__img-wrapper {
+    width: 522.02px;
+    height: 234.64px;
+    margin-top: 108px;
   }
 }
 
@@ -4488,6 +4536,17 @@ img {
   .about-good__connect-btn {
     float: right;
   }
+
+  .design-block-bg-inner {
+    height: 485px;
+    background: url(../img/desig-block/desig-block-768.webp) -127px center no-repeat;
+  }
+
+  .design-block__img-wrapper {
+    width: 576.47px;
+    height: 259.12px;
+    margin-top: 108px;
+  }
 }
 
 @media (max-width: 767px) {
@@ -4975,9 +5034,9 @@ img {
   }
 
   .about-good-bg-rect {
-    width: 30px;
-    height: 481.79px;
-    top: 88px;
+    width: 15px;
+    height: 305.17px;
+    top: 122px;
   }
 
   .about-good__name {
@@ -5052,6 +5111,17 @@ img {
 
   .about-good__connect-btn {
     float: right;
+  }
+
+  .design-block-bg-inner {
+    height: 637.65px;
+    background: url(../img/desig-block/desig-block-480.webp) 0 center no-repeat;
+  }
+
+  .design-block__img-wrapper {
+    width: 410.15px;
+    height: 272.46px;
+    margin-top: 181px;
   }
 }
 
@@ -5515,5 +5585,16 @@ img {
 
   .about-good__connect-btn {
     float: right;
+  }
+
+  .design-block-bg-inner {
+    height: 430px;
+    background: url(../img/desig-block/desig-block-320.webp) 0 center no-repeat;
+  }
+
+  .design-block__img-wrapper {
+    width: 288px;
+    height: 191.32px;
+    margin-top: 119px;
   }
 }

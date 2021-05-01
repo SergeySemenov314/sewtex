@@ -1,4 +1,4 @@
-.design-block-bg-out{
+.design-block-bg-out {
     background-color: #fff;
 }
 
@@ -8,5 +8,107 @@
     margin-right: auto;
     margin-left: auto;
     overflow: hidden;
-    background: url(../img/desig-block/desig-block.webp) -53% center no-repeat;
+    background: url(../img/desig-block/desig-block.webp) -60% center no-repeat;
+}
+
+.design-block__img-wrapper {
+    width: 1067px;
+    height: 477.85px;
+    margin-top: 171px;
+
+}
+
+.design-block__img {
+    @include inner-img();
+}
+
+
+// Это 1440
+@media(max-width: 1800px) {
+    .design-block-bg-inner {
+        height: 582px;
+        background: url(../img/desig-block/desig-block-1440.webp) -127px center no-repeat
+    }
+
+    .design-block__img-wrapper {
+        width: 760.17px;
+        height: 341.55px;
+        margin-top: 114px;
+    
+    }
+}
+
+// Это 1280
+@media(max-width: 1439px) {
+    .design-block-bg-inner {
+        height: 519px;
+        background: url(../img/desig-block/desig-block-1280.webp) -127px center no-repeat
+    }
+
+    .design-block__img-wrapper {
+        width: 625px;
+        height: 280.93px;
+        margin-top: 150px;
+    
+    }
+}
+
+// Это 1024
+@media(max-width: 1279px) {
+    .design-block-bg-inner {
+        height: 440px;
+        background: url(../img/desig-block/desig-block-1024.webp) -127px center no-repeat
+    }
+
+    .design-block__img-wrapper {
+        width: 522.02px;
+        height: 234.64px;
+        margin-top: 108px;
+    
+    }
+}
+
+// Это 768
+@media(max-width: 1023px) {
+    .design-block-bg-inner {
+        height: 485px;
+        background: url(../img/desig-block/desig-block-768.webp) -127px center no-repeat
+    }
+
+    .design-block__img-wrapper {
+        width: 576.47px;
+        height: 259.12px;
+        margin-top: 108px;
+    
+    }
+}
+
+// Это 480
+@media(max-width: 767px) {
+    .design-block-bg-inner {
+        height: 637.65px;
+        background: url(../img/desig-block/desig-block-480.webp) 0 center no-repeat
+    }
+
+    .design-block__img-wrapper {
+        width: 410.15px;
+        height: 272.46px;
+        margin-top: 181px;
+    
+    }
+}
+
+// Это 320
+@media(max-width: 479px) {
+    .design-block-bg-inner {
+        height: 430px;
+        background: url(../img/desig-block/desig-block-320.webp) 0 center no-repeat
+    }
+
+    .design-block__img-wrapper {
+        width: 288px;
+        height: 191.32px;
+        margin-top: 119px;
+    
+    }
 }
