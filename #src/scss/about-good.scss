@@ -177,3 +177,520 @@
 
 
 .about-good__connect-btn {}
+
+
+
+// Это 1440
+@media(max-width: 1800px) {
+
+    .about-good-bg-rect {
+        width: 80px;
+        height: 446px;
+        top: 108px;
+    }
+
+    .about-good__name {
+        font-size: 31.25px;
+        width: 745.93px;
+        margin-bottom: 65px;
+    }
+
+    .about-good__img-container {
+        width: 544px;
+    }
+
+    .about-good__img-wrapper {
+        width: 544px;
+        height: 358px;
+        margin-bottom: 16px;
+    }
+
+    .about-good__img {
+        width: 357px;
+    }
+
+    .about-good__marks-container {
+        margin-right: 10px;
+    }
+
+    .about-good__text-share {
+        font-size: 16px;
+        margin-right: 16px;
+    }
+
+    .about-good__likes {
+        margin-bottom: 0;
+    }
+
+    .about-good__likes-value {
+        font-size: 13px;
+    }
+
+    .about-good__like-icon {
+        width: 18px;
+        margin-right: 4px;
+    }
+
+    .about-good__shared {
+        display: none;
+    }
+
+    .about-good__social-icon {
+        height: 21px;
+    }
+
+    .about-good__code {
+        font-size: 25px;
+        margin-bottom: 24px;
+    }
+
+    .about-good__info-list {
+        margin-bottom: 40px;
+    }
+
+    .about-good__list-item {
+        font-size: 20px;
+        padding-left: 17px;
+        margin-bottom: 4px;
+    }
+
+    .about-good__list-item:before {
+        top: 12px;
+        width: 8px;
+        height: 8px;
+    }
+
+
+}
+
+// Это 1280
+@media(max-width: 1439px) {
+    .about-good-bg-rect {
+        width: 80px;
+        height: 401px;
+        top: 108px;
+    }
+
+    .about-good__name {
+        font-size: 25px;
+    }
+
+    .about-good__img-container {
+        width: 488px;
+        margin-right: 66px;
+    }
+
+    .about-good__img-wrapper {
+        width: 488px;
+        height: 322px;
+
+    }
+
+    .about-good__img {
+        width: 320px;
+    }
+
+    .about-good__marks-container {
+        margin-right: 10px;
+    }
+
+    .about-good__text-share {
+        font-size: 12.8px;
+    }
+
+    .about-good__likes {
+        align-items: center;
+
+    }
+
+    .about-good__likes-value {
+        font-size: 13px;
+    }
+
+    .about-good__like-icon {
+        width: 17px;
+        margin-right: 4px;
+    }
+
+    .about-good__shared {
+        display: none;
+    }
+
+    .about-good__social-icon {
+        height: 18px;
+    }
+
+    .about-good__code {
+        font-size: 20px;
+        margin-bottom: 25px;
+    }
+
+    .about-good__info-list {
+        margin-bottom: 40px;
+    }
+
+    .about-good__list-item {
+        font-size: 16px;
+        padding-left: 17px;
+        margin-bottom: 4px;
+    }
+
+    .about-good__list-item:before {
+        top: 8px;
+        width: 6.73px;
+        height: 6.73px;
+    }
+}
+
+// Это 1024
+@media(max-width: 1279px) {
+
+    .about-good-bg-rect {
+        width: 45px;
+        height: 334.93px;
+        top: 88px;
+    }
+
+    .about-good {
+        padding-top: 13px;
+    }
+
+    .about-good__name {
+        margin-bottom: 56px;
+    }
+
+    .about-good__img-container {
+        width: 407.59px;
+        margin-right: 55px;
+    }
+
+    .about-good__img-wrapper {
+        width: 407.59px;
+        height: 268.94px;
+
+    }
+
+    .about-good__img {
+        width: 267.27px;
+    }
+
+    .about-good__marks-container {
+        margin-right: 10px;
+    }
+
+    .about-good__text-share {
+        font-size: 16px;
+    }
+
+    .about-good__likes {
+        align-items: center;
+
+    }
+
+    .about-good__likes-value {
+        font-size: 13px;
+    }
+
+    .about-good__like-icon {
+        width: 17px;
+        margin-right: 4px;
+    }
+
+    .about-good__shared {
+        display: none;
+    }
+
+    .about-good__social-icon {
+        height: 18px;
+    }
+
+    .about-good__code {
+
+        margin-bottom: 17px;
+    }
+
+    .about-good__info-list {
+        margin-bottom: 40px;
+    }
+
+    .about-good__list-item {
+        padding-left: 17px;
+    }
+
+    .about-good__list-item:before {
+
+        top: 9px;
+
+        width: 5.62px;
+        height: 5.62px;
+    }
+}
+
+// Это 768
+@media(max-width: 1023px) {
+    .about-good-bg-rect {
+        width: 30px;
+        height: 481.79px;
+        top: 88px;
+    }
+
+    .about-good__name {
+        width: 544px;
+        margin-bottom: 34px;
+    }
+
+    .about-good__info-container {
+        flex-direction: column;
+
+    }
+
+    .about-good__img-container {
+        width: 100%;
+        margin-right: 0;
+        margin-bottom: 41px;
+    }
+
+    .about-good__img-wrapper {
+        width: 100%;
+        height: 433.79px;
+        margin-bottom: 24px;
+
+    }
+
+    .about-good__img {
+        width: 431.09px;
+    }
+
+    .about-good__marks-container {
+        margin-right: 10px;
+    }
+
+    .about-good__text-share {
+        font-size: 19.2px;
+    }
+
+    .about-good__likes {
+        align-self: flex-start;
+        align-items: center;
+
+    }
+
+    .about-good__likes-value {
+        font-size: 13px;
+    }
+
+    .about-good__like-icon {
+        width: 26px;
+        margin-right: 4px;
+    }
+
+    .about-good__shared {
+        display: none;
+    }
+
+    .about-good__social-icon {
+        height: 25px;
+    }
+
+    .about-good__code {
+        font-size: 24px;
+        margin-bottom: 16px;
+    }
+
+    .about-good__info-list {
+        margin-bottom: 40px;
+    }
+
+    .about-good__list-item {
+        font-size: 20px;
+        padding-left: 17px;
+        margin-bottom: 8px;
+    }
+
+    .about-good__list-item:before {
+
+        top: 12px;
+
+        width: 8px;
+        height: 8px;
+    }
+
+    .about-good__connect-btn {
+        float: right;
+    }
+        
+
+}
+
+// Это 480
+@media(max-width: 767px) {
+    .about-good-bg-rect {
+        width: 30px;
+        height: 481.79px;
+        top: 88px;
+    }
+
+    .about-good__name {
+        width: 100%;
+        margin-bottom: 32px;
+    }
+
+    .about-good__info-container {
+        flex-direction: column;
+
+    }
+
+    .about-good__img-container {
+        margin-bottom: 32px;
+    }
+
+    .about-good__img-wrapper {
+        height: 273.17px;
+        margin-bottom: 24px;
+
+    }
+
+    .about-good__img {
+        width: 271.48px;
+    }
+
+    .about-good__socials {
+        justify-content: flex-start;
+    }
+
+    .about-good__marks-container {
+        margin-right: 10px;
+    }
+
+    .about-good__text-share {
+        font-size: 19.2px;
+    }
+
+    .about-good__likes {
+        align-self: flex-start;
+        align-items: center;
+
+    }
+
+    .about-good__likes-value {
+        font-size: 13px;
+    }
+
+    .about-good__like-icon {
+        width: 26px;
+        margin-right: 4px;
+    }
+
+    .about-good__shared {
+        display: none;
+    }
+
+    .about-good__social-icon {
+        height: 25px;
+    }
+
+    .about-good__code {
+  
+    }
+
+    .about-good__info-list {
+ 
+    }
+
+    .about-good__list-item {
+        font-size: 20px;
+        padding-left: 17px;
+        margin-bottom: 4px;
+    }
+
+    .about-good__list-item:before {
+
+    }
+
+    .about-good__connect-btn {
+        float: right;
+    }
+}
+
+// Это 320
+@media(max-width: 479px) {
+    .about-good-bg-rect {
+        width: 8px;
+        height: 222px;
+        top: 204px;
+    }
+
+    .about-good__name {
+        width: 100%;
+        margin-bottom: 51px;
+    }
+
+    .about-good__info-container {
+        flex-direction: column;
+
+    }
+
+    .about-good__img-container {
+        margin-bottom: 39px;
+    }
+
+    .about-good__img-wrapper {
+        height: 190.03px;
+
+    }
+
+    .about-good__img {
+        width: 188.85px;
+    }
+
+    .about-good__marks-container {
+        margin-right: 10px;
+    }
+
+    .about-good__text-share {
+    }
+
+    .about-good__likes {
+        align-self: flex-start;
+        align-items: center;
+
+    }
+
+    .about-good__likes-value {
+        font-size: 15px;
+    }
+
+    .about-good__like-icon {
+        width: 26px;
+        margin-right: 4px;
+    }
+
+    .about-good__shared {
+        display: none;
+    }
+
+    .about-good__social-icon {
+        height: 25px;
+    }
+
+    .about-good__code {
+  
+    }
+
+    .about-good__info-list {
+        margin-bottom: 32px;
+ 
+    }
+
+    .about-good__list-item {
+     
+    }
+
+    .about-good__list-item:before {
+        
+    }
+
+    .about-good__connect-btn {
+        float: right;
+    }
+}

@@ -100,6 +100,10 @@
         font-size: 16px;
     }
 
+    .btn__text_big {
+        font-size: 20px;
+    }
+
     .btn_big .btn__text_has-arrow::after {
         width: 8px;
         height: 8px;
@@ -140,6 +144,10 @@
         padding: 6px 29px;
     }
 
+    .btn__text_big {
+        font-size: 16px;
+    }
+
     .btn_small {
         width: 153.85px;
         height: 34.99px;
@@ -176,6 +184,10 @@
         height: 6px;
     }
 
+    .btn__text_big {
+        font-size: 14px;
+    }
+
     .btn_small {
         width: 125.45px;
         height: 28.53px;
@@ -206,6 +218,10 @@
         height: 10px;
     }
 
+    .btn__text_big {
+        font-size: 20px;
+    }
+
 }
 
 // Это 480
@@ -223,6 +239,10 @@
         font-weight: 600;
         font-size: 20px;
         line-height: 155%;
+    }
+
+    .btn__text_big {
+        font-size: 18px;
     }
 
 
