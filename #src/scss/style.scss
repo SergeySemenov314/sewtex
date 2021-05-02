@@ -13,6 +13,7 @@
 
 // первая страница
 @import "header";
+@import "header__mobile-menu";
 @import "main-slider";
 @import "goods";
 @import "about-company";
@@ -23,6 +24,7 @@
 
 // вторая страница
 @import "goods-catalog";
+@import "filter-mobile";
 
 // Третья страница
 @import "socials";

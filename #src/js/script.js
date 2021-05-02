@@ -29,53 +29,116 @@ testWebP(function (support) {
 
 // ==========custom-lang============
 
-let customSelect = document.querySelector('.custom-select');
-let selectCurrentWrapper = document.querySelector('.custom-select__current-wrapper');
-let selectCurrent = document.querySelector('.custom-select__current');
-let selectOptions = document.querySelectorAll('.custom-select__option-wrapper');
+let customSelects = document.querySelectorAll('.custom-select');
 
-
-selectCurrentWrapper.onclick = () => {
-    customSelect.classList.toggle('custom-select_active');
+for (let i = 0; i < customSelects.length; i++) {
+    customSelectClick(customSelects[i]);
 }
 
-function selectOptionClick(item) {
-    item.onclick = function () {
-        let optionValue = item.querySelector('.custom-select__option').textContent;
-        selectCurrent.textContent = optionValue;
-        customSelect.classList.remove('custom-select_active');
-    };
+function customSelectClick(select) {
+    select.onclick = function () {
+        select.classList.toggle('custom-select_active');
+    }
 
+    let selectCurrentWrapper = select.querySelector('.custom-select__current-wrapper');
+    let selectCurrent = select.querySelector('.custom-select__current');
+    let selectOptions = select.querySelectorAll('.custom-select__option-wrapper');
+
+
+  
+
+    function selectOptionClick(item) {
+        item.onclick = function (select) {
+            let optionValue = item.querySelector('.custom-select__option').textContent;
+            selectCurrent.textContent = optionValue;
+        };
+
+    }
+
+    for (let i = 0; i < selectOptions.length; i++) {
+        selectOptionClick(selectOptions[i], select);
+    }
 }
 
-for (let i = 0; i < selectOptions.length; i++) {
-    selectOptionClick(selectOptions[i]);
-}
+
 
 
 // ==========select-lang============
 
-let langSelect = document.querySelector('.lang-select');
-let langSelectCurrentWrapper = document.querySelector('.lang-select__current-wrapper');
-let langSelectCurrent = document.querySelector('.lang-select__current');
-let langSelectOptions = document.querySelectorAll('.lang-select__option-wrapper');
+let langSelects = document.querySelectorAll('.lang-select');
 
-langSelectCurrentWrapper.onclick = () => {
-    langSelect.classList.toggle('lang-select_active');
+for (let i = 0; i < langSelects.length; i++) {
+    langSelectClick(langSelects[i]);
 }
 
-function selectLangOptionClick(item) {
-    item.onclick = function () {
-        let optionValue = item.querySelector('.lang-select__option').innerHTML;
-        langSelectCurrent.innerHTML = optionValue;
-        langSelect.classList.remove('lang-select_active');
+
+
+function langSelectClick(select) {
+    let langSelectCurrentWrapper = select.querySelector('.lang-select__current-wrapper');
+    let langSelectCurrent = select.querySelector('.lang-select__current');
+    let langSelectOptions = select.querySelectorAll('.lang-select__option-wrapper');
+    
+    langSelectCurrentWrapper.onclick = () => {
+        select.classList.toggle('lang-select_active');
+    }
+    
+    function selectLangOptionClick(item) {
+        item.onclick = function () {
+            let optionValue = item.querySelector('.lang-select__option').innerHTML;
+            langSelectCurrent.innerHTML = optionValue;
+            select.classList.remove('lang-select_active');
+        };
+    
+    }
+    
+    for (let i = 0; i < langSelectOptions.length; i++) {
+        selectLangOptionClick(langSelectOptions[i]);
+    }
+    
+}
+
+
+
+
+
+// menu mobile header
+
+
+const menuToggles = document.querySelectorAll('.menu-burger__switcher');
+
+const menuLayout = document.querySelector('.header__mobile-menu-layout');
+
+
+const mobileMenu = document.querySelector('.header__mobile-menu');
+
+const menuNavLinks = mobileMenu.querySelectorAll('.header__nav-link');
+
+function menuToggleClick(toggle) {
+    toggle.onclick = function () {
+        menuLayout.classList.toggle('header__mobile-menu-layout_active');
+        mobileMenu.classList.toggle('header__mobile-menu_active');
+    }
+}
+
+for (let i = 0; i < menuToggles.length; i++) {
+    menuToggleClick(menuToggles[i]);
+}
+
+
+function menuNavClick(linkElem) {
+    linkElem.onclick = function () {
+        menuLayout.classList.toggle('header__mobile-menu-layout_active');
+        mobileMenu.classList.toggle('header__mobile-menu_active');
+        
+
     };
 
 }
 
-for (let i = 0; i < langSelectOptions.length; i++) {
-    selectLangOptionClick(langSelectOptions[i]);
+for (let i = 0; i < menuNavLinks.length; i++) {
+    menuNavClick(menuNavLinks[i]);
 }
+
 
 
 
@@ -230,6 +293,30 @@ $('.goods-catalog__nav-slider-inner').slick({
     nextArrow: $('.goods-catalog__nav-next'),
 
 });
+
+
+// ==================mobile-filters=======================
+
+const btnOpen = document.querySelector('.goods-catalog__filter-btn');
+const filterLayout = document.querySelector('.filter-mobile-layout');
+const filterMobile = document.querySelector('.filter-mobile');
+const filterCross = document.querySelector('.filter-mobile__cross');
+
+if(btnOpen && filterCross) {
+    btnOpen.onclick = function() {
+        filterLayout.classList.add('filter-mobile-layout_active');
+        filterMobile.classList.add('filter-mobile_active');
+    }
+    
+    filterCross.onclick = function() {
+        filterLayout.classList.remove('filter-mobile-layout_active');
+        filterMobile.classList.remove('filter-mobile_active');
+    }
+
+}
+
+
+
 
 
 

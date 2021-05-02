@@ -1,0 +1,220 @@
+.filter-mobile-layout {
+    opacity: 0;
+    pointer-events: none;
+}
+
+.filter-mobile {
+    display: none;
+}
+
+// Это 768
+@media(max-width: 1023px) {
+    .filter-mobile-layout_active {
+        opacity: 1;
+        pointer-events: all;
+        position: fixed;
+        z-index: 100;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        left: 0;
+        background-color: rgba(0, 0, 0, 0.363);
+    }
+
+    .filter-mobile {
+        position: fixed;
+        z-index: 100;
+        top: 0;
+        left: -435px;
+        display: block;
+        height: 100vh;
+        width: 435px;
+        background-color: #fff;
+        transition: transform .4s ease-in;
+    }
+
+    .filter-mobile_active {
+        transform: translateX(100%);
+    }
+
+    .filter-mobile__container {
+        padding-left: 57px;
+        padding-right: 52px;
+    }
+
+    .filter-mobile__cross-container {
+        padding-top: 35px;
+        padding-bottom: 27px;
+        border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+
+    }
+
+    .filter-mobile__cross {
+        display: flex;
+        align-items: center;
+        position: relative;
+        width: 40px;
+        height: 30px;
+        cursor: pointer;
+        z-index: 11;
+    }
+
+    .filter-mobile__cross::before {
+        position: absolute;
+        content: '';
+        background-color: #000;
+
+        left: 8px;
+        top: 14px;
+        transform: rotate(33deg);
+        width: 32px;
+        height: 3px;
+        transition: top .2s linear, transform .2s ease-in .2s;
+
+    }
+
+    .filter-mobile__cross::after {
+        position: absolute;
+        content: '';
+        background-color: #000;
+
+        top: 14px;
+        left: 8px;
+        transform: rotate(-33deg);
+        width: 32px;
+        height: 3px;
+        transition: top .2s linear, transform .2s ease-in .2s;
+
+    }
+
+    .filter-mobile__main {
+        padding-top: 44px;
+    }
+
+    .filter-mobile__filters-list {}
+
+    .filter-mobile__filter {
+       
+    }
+
+    .filter-mobile__filter-name {
+        display: block;
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 1.2;
+        color: #000000;
+        margin-bottom: 24px;
+    }
+
+    .filter-mobile__filter_active .filter-mobile__filter-name  {
+        font-weight: 600;
+    }
+
+    .filter-mobile__filters-sublist {
+        margin-bottom: 24px;
+    }
+
+    .filter-mobile__subfilter {
+        margin-bottom: 16px;
+    }
+
+    .filter-mobile__subfilter-input {
+        display: none;
+    }
+
+    .filter-mobile__subfilter-wrapper {
+        display: flex;
+    }
+
+    .filter-mobile__checkbox {
+        flex-shrink: 0;
+        width: 32px;
+        height: 32px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: 2px solid rgba(255, 55, 55, 0.6);
+        margin-right: 16px;
+    }
+
+    .filter-mobile__subfilter-input:checked+.filter-mobile__subfilter-wrapper .filter-mobile__checkbox {
+        background-color: $mainColor;
+    }
+
+    .filter-mobile__checked-img {
+        display: none;
+        width: 21px;
+    }
+
+    .filter-mobile__subfilter-input:checked+.filter-mobile__subfilter-wrapper .filter-mobile__checked-img {
+        display: block;
+    }
+
+    .filter-mobile__subfilter-input:checked+.filter-mobile__subfilter-wrapper .filter-mobile__subfilter-label {
+        font-weight: 600;
+    }
+
+
+    .filter-mobile__subfilter-label {
+        font-size: 19.2px;
+        line-height: 1.2;
+        color: #000000;
+    }
+
+}
+
+// Это 480
+@media(max-width: 767px) {
+    .filter-mobile {
+        left: -385px;
+        width: 385px;
+
+    }
+
+    .filter-mobile__container {
+        padding-right: 32px;
+        padding-left: 32px;
+    }
+
+    .filter-mobile__subfilter-label {
+        font-size: 16px;
+    }
+}
+
+// Это 320
+@media(max-width: 479px) {
+    .filter-mobile {
+        left: -239.45px;
+        width: 239.45px;
+
+    }
+
+    .filter-mobile__container {
+        padding-top: 23px;
+    }
+
+    .filter-mobile__container {
+        padding-right: 11px;
+        padding-left: 16px;
+    }
+
+    .filter-mobile__cross-container {
+        padding-top: 39px;
+        padding-bottom: 16px;
+    }
+
+    .filter-mobile__filter-name {
+        font-size: 20px;
+        margin-bottom: 16px;
+    }
+
+    .filter-mobile__subfilter{
+        margin-bottom: 8px;
+    }
+
+    .filter-mobile__checkbox {
+        width: 21px;
+        height: 21px;
+    }
+
+}

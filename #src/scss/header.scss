@@ -559,21 +559,103 @@
 
     .menu-burger__switcher_active .menu-burger__switcher-line::before {
         left: 8px;
-        transform: rotate(40deg);
-        width: 25px;
-        height: 6px;
+        transform: rotate(33deg);
+        width: 32px;
+        height: 3px;
         top: 0;
         transition: top 0.2s linear, transform 0.2s ease-in 0.2s;
     }
 
     .menu-burger__switcher_active .menu-burger__switcher-line::after {
         left: 8px;
-        transform: rotate(-40deg);
-        width: 25px;
-        height: 6px;
+        transform: rotate(-33deg);
+        width: 32px;
+        height: 3px;
         top: 0;
         transition: top 0.2s linear, transform 0.2s ease-in 0.2s;
     }
+
+    .lang-select {
+        height: 30px;
+        width: 62px;
+    }
+
+    .header__lang-select {
+        margin-right: 42px;
+    }
+
+
+    .lang-select__icon {
+        width: 32px;
+    }
+
+    .lang-select__option-icon {
+        width: 32px;
+    
+    }
+
+    .lang-select__option-wrapper {
+        padding: 2px 2px;
+    }
+
+    .custom-select__current {
+        font-size: 16px;
+    }
+
+    .custom-select__icon {
+        display: none;
+    }
+    .header__tel-select {
+        margin-right: 0;
+    }
+
+    .custom-select {
+        width: 177px;
+    }
+
+    .custom-select__current {
+        padding-right: 14px;
+    }
+
+    .custom-select__option {
+        font-size: 16px;
+        padding-right: 0;
+    }
+
+    .header__nav {
+        padding-top: 40px;
+        padding-bottom: 40px;
+        border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+    }
+
+    .header__nav-list{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .header__nav-item {
+        margin-right: 0;
+        margin-bottom: 32px;
+    }
+
+    .header__nav-item:last-child {
+        margin-bottom: 0;
+    }
+
+    .header__email-wrapper {
+        margin-right: 0;
+        margin-bottom: 36px;
+    }
+
+    .header__email {
+        font-size: 16px;
+    }
+
+    .header__email-icon {
+        width: 25px;
+    }
+
+ 
 
 }
 
@@ -581,7 +663,7 @@
     .header__search-container {
         margin-right: 34px;
     }
-  
+
 
 }
 
@@ -633,4 +715,3 @@
         top: -9px;
     }
 }
-
