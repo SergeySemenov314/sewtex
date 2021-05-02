@@ -104,18 +104,17 @@ $('.main-slider__inner').slick({
     // fade: true,
     asNavFor: '.main-slider__nav-slider-inner',
     responsive: [{
-            breakpoint: 481,
-            settings: {
-                asNavFor: null,
-                dots: true,
-                arrows: true,
-                prevArrow: $('.main-slider__mobile-prev'),
-                nextArrow: $('.main-slider__mobile-next'),
-                dotsClass: 'main-slider__dots-container',
+        breakpoint: 481,
+        settings: {
+            asNavFor: null,
+            dots: true,
+            arrows: true,
+            prevArrow: $('.main-slider__mobile-prev'),
+            nextArrow: $('.main-slider__mobile-next'),
+            dotsClass: 'main-slider__dots-container',
 
-            }
-        },
-    ]
+        }
+    }, ]
 
 
 });
@@ -141,8 +140,7 @@ $('.main-slider__nav-slider-inner').slick({
     responsive: [{
         breakpoint: 481,
         settings: 'unslick',
-    },
-    ]
+    }, ]
 
 
 });
@@ -180,8 +178,7 @@ $('.goods__slider').slick({
             dotsClass: 'goods__dots-container',
 
         }
-    },
-    ]
+    }, ]
 
 });
 
@@ -197,7 +194,7 @@ $('.goods__nav-slider-inner').slick({
     slidesToShow: 2,
     slidesToScroll: 1,
     autoplaySpeed: 3000,
-    autoplay: false,
+    autoplay: true,
     arrows: true,
     focusOnSelect: true, // для переключения на слайд по нажатию
     prevArrow: $('.goods__nav-prev'),
@@ -206,8 +203,7 @@ $('.goods__nav-slider-inner').slick({
     responsive: [{
         breakpoint: 481,
         settings: 'unslick',
-    },
-    ]
+    }, ]
 
 
 });
@@ -265,11 +261,15 @@ $('.advantages-slider__inner').slick({
     pauseOnFocus: false,
     slidesToShow: 2,
     slidesToScroll: 1,
-    autoplay: true,
+    autoplay: false,
     autoplaySpeed: 3000,
     arrows: false,
     dots: false,
     asNavFor: '.advantages-slider__nav-slider-inner',
+    responsive: [{
+        breakpoint: 481,
+        settings: 'unslick',
+    }, ]
 
 });
 
@@ -291,6 +291,25 @@ $('.advantages-slider__nav-slider-inner').slick({
     prevArrow: $('.advantages-slider__nav-prev'),
     nextArrow: $('.advantages-slider__nav-next'),
     asNavFor: '.advantages-slider__inner',
+    responsive: [{
+        breakpoint: 481,
+        settings: 'unslick',
+    }, ]
 
 
 });
+
+if (window.matchMedia("(max-width: 480px)").matches) {
+
+    let advantagesSlider = document.querySelector('.advantages-slider__inner');
+    let slidesAdvantages = document.querySelectorAll('.advantages-slider-slide');
+
+    let firstSlides = [slidesAdvantages[0], slidesAdvantages[1]];
+
+    advantagesSlider.innerHTML = "";
+
+    for (let slide of firstSlides) {
+        advantagesSlider.append(slide);
+    }
+
+}

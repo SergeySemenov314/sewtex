@@ -2111,6 +2111,18 @@ img {
           justify-content: flex-end;
 }
 
+.table-info-bg {
+  background-color: #fff;
+}
+
+.table-info__img {
+  width: 100%;
+}
+
+.table-info__btn-zoom {
+  display: none;
+}
+
 @media (max-width: 1800px) {
   .container {
     max-width: 1158px;
@@ -2777,6 +2789,38 @@ img {
     height: 341.55px;
     margin-top: 114px;
   }
+
+  .advantages-slider {
+    margin-bottom: 37px;
+  }
+
+  .advantages-slider__inner .slick-list {
+    margin: 0 -76px;
+  }
+
+  .advantages-slider__inner {
+    margin-bottom: 40px;
+  }
+
+  .advantages-slider-slide {
+    margin: 0 76px;
+  }
+
+  .advantages-slider__slide-inner {
+    width: 487.38px;
+  }
+
+  .advantages-slider__img-wrapper {
+    height: 321.17px;
+  }
+
+  .advantages-slider__description {
+    font-size: 20px;
+  }
+
+  .table-info {
+    margin-bottom: 30px;
+  }
 }
 
 @media (max-width: 1439px) {
@@ -3363,6 +3407,35 @@ img {
     height: 280.93px;
     margin-top: 150px;
   }
+
+  .advantages-slider {
+    margin-bottom: 37px;
+  }
+
+  .advantages-slider__inner .slick-list {
+    margin: 0 -65px;
+  }
+
+  .advantages-slider-slide {
+    margin: 0 65px;
+  }
+
+  .advantages-slider__inner {
+    margin-bottom: 42px;
+  }
+
+  .advantages-slider__slide-inner {
+    width: 415.25px;
+  }
+
+  .advantages-slider__img-wrapper {
+    height: 273.99px;
+    margin-bottom: 34px;
+  }
+
+  .advantages-slider__description {
+    font-size: 16px;
+  }
 }
 
 @media (max-width: 1279px) {
@@ -3918,6 +3991,36 @@ img {
     width: 522.02px;
     height: 234.64px;
     margin-top: 108px;
+  }
+
+  .advantages-slider {
+    margin-bottom: 25px;
+    padding-top: 91px;
+  }
+
+  .advantages-slider__inner .slick-list {
+    margin: 0 -59px;
+  }
+
+  .advantages-slider-slide {
+    margin: 0 59px;
+  }
+
+  .advantages-slider__inner {
+    margin-bottom: 27px;
+  }
+
+  .advantages-slider__slide-inner {
+    width: 346.82px;
+  }
+
+  .advantages-slider__img-wrapper {
+    height: 228.84px;
+    margin-bottom: 28px;
+  }
+
+  .table-info {
+    margin-bottom: 50px;
   }
 }
 
@@ -4547,6 +4650,40 @@ img {
     height: 259.12px;
     margin-top: 108px;
   }
+
+  .advantages-slider {
+    margin-bottom: 0;
+    padding-top: 71px;
+  }
+
+  .advantages-slider__inner .slick-list {
+    margin: 0 -47px;
+  }
+
+  .advantages-slider-slide {
+    margin: 0 47px;
+  }
+
+  .advantages-slider__inner {
+    margin-bottom: 27px;
+  }
+
+  .advantages-slider__slide-inner {
+    width: 278.97px;
+  }
+
+  .advantages-slider__img-wrapper {
+    height: 184.07px;
+    margin-bottom: 22px;
+  }
+
+  .advantages-slider__description {
+    font-size: 20px;
+  }
+
+  .table-info {
+    margin-bottom: 30px;
+  }
 }
 
 @media (max-width: 767px) {
@@ -5123,6 +5260,59 @@ img {
     height: 272.46px;
     margin-top: 181px;
   }
+
+  .advantages-slider__nav-slider-wrapper {
+    display: none;
+  }
+
+  .advantages-slider {
+    margin-bottom: 0;
+    padding-top: 40px;
+  }
+
+  .advantages-slider__inner .slick-list {
+    margin: 0 -0;
+  }
+
+  .advantages-slider-slide {
+    margin: 0 0;
+    margin-bottom: 47px;
+  }
+
+  .advantages-slider-slide:last-child {
+    margin-bottom: 0;
+  }
+
+  .advantages-slider__inner {
+    margin-bottom: 27px;
+  }
+
+  .advantages-slider__slide-inner {
+    width: 100%;
+    margin-right: 0;
+  }
+
+  .advantages-slider__img-wrapper {
+    height: 273.9px;
+    margin-bottom: 24px;
+  }
+
+  .advantages-slider__description {
+    font-size: 20px;
+  }
+
+  .table-info__img {
+    margin-bottom: 12px;
+  }
+
+  .table-info__btn-zoom {
+    display: block;
+    float: right;
+  }
+
+  .table-info__btn-zoom-icon {
+    width: 32px;
+  }
 }
 
 @media (max-width: 479px) {
@@ -5596,5 +5786,22 @@ img {
     width: 288px;
     height: 191.32px;
     margin-top: 119px;
+  }
+
+  .advantages-slider__inner {
+    margin-bottom: 0;
+  }
+
+  .advantages-slider__img-wrapper {
+    height: 189.62px;
+    margin-bottom: 16px;
+  }
+
+  .advantages-slider__description {
+    font-size: 16px;
+  }
+
+  .table-info__btn-zoom-icon {
+    width: 41px;
   }
 }

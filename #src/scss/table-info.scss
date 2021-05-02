@@ -7,3 +7,69 @@
 .table-info__img {
     width: 100%;
 }
+
+.table-info__btn-zoom {
+    display: none;
+}
+
+
+// Это 1440
+@media(max-width: 1800px) {
+
+    .table-info {
+        margin-bottom: 30px;
+    }
+   
+
+}
+
+// Это 1280
+@media(max-width: 1439px) {
+  
+
+}
+
+// Это 1024
+@media(max-width: 1279px) {
+    .table-info {
+        margin-bottom: 50px;
+    }
+  
+
+}
+
+// Это 768
+@media(max-width: 1023px) {
+    .table-info {
+        margin-bottom: 30px;
+    }
+  
+}
+
+// Это 480
+@media(max-width: 767px) {
+    .table-info__img {
+        margin-bottom: 12px;
+    }
+
+    .table-info__btn-zoom {
+        display: block;
+        float: right;
+    }
+
+    .table-info__btn-zoom-icon {
+        width: 32px;
+    }
+    
+  
+
+}
+
+// Это 320
+@media(max-width: 479px) {
+    .table-info__btn-zoom-icon {
+        width: 41px;
+    }
+   
+
+}
